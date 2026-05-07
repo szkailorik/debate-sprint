@@ -12,8 +12,8 @@ export default function TopicsPage() {
       <main className="flex-1 px-4 py-10 max-w-4xl mx-auto w-full">
         <PageHeader
           title="Topic Armory"
-          subtitle="Armory of 10 Motions · 武器库"
-          subtitle_zh="10 个常见辩题，每个都有正反方 3 论点 + 例子"
+          subtitle="Armory of 13 Motions · 武器库"
+          subtitle_zh="13 个常见辩题（含 3 个 AI 议题），每个都有正反方 3 论点 + 例子"
           icon={<SwordIcon className="w-16 h-16" />}
         />
 

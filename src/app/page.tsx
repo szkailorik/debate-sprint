@@ -33,7 +33,7 @@ const modules = [
   },
   {
     title: "Topic Armory",
-    subtitle: "Armory of 10 Motions",
+    subtitle: "Armory of 13 Motions",
     subtitle_zh: "辩题武器库",
     href: "/topics",
     icon: <SwordIcon className="w-12 h-12" />,

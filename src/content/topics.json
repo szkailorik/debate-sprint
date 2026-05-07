@@ -149,6 +149,51 @@
         { "claim_en": "Country life is calmer and quieter.", "claim_zh": "乡下生活更安静", "example_en": "No car horns at 7am — just birds." },
         { "claim_en": "More space to play and grow food.", "claim_zh": "有更多空间玩和种东西", "example_en": "A countryside kid can have a big yard to run around in." }
       ]
+    },
+    {
+      "id": "homework-ai",
+      "title_en": "Should kids use AI to help with homework?",
+      "title_zh": "小朋友写作业可以用 AI 吗？",
+      "pro": [
+        { "claim_en": "AI is like a patient tutor at home.", "claim_zh": "AI 就像在家的耐心家教", "example_en": "If you don't understand a math problem, you can ask AI to explain it five different ways until it clicks." },
+        { "claim_en": "AI saves time for play and rest.", "claim_zh": "节省时间，能多玩多休息", "example_en": "If AI helps you finish faster, you have more time for soccer or piano." },
+        { "claim_en": "AI makes learning more fun.", "claim_zh": "学习变得更好玩", "example_en": "AI can turn a boring spelling list into a quiz game." }
+      ],
+      "con": [
+        { "claim_en": "Kids don't really learn if AI does the work.", "claim_zh": "AI 替你做，你的脑子就没在练", "example_en": "If AI writes your essay, your own writing muscle never gets stronger." },
+        { "claim_en": "AI can give wrong answers.", "claim_zh": "AI 有时会给错答案", "example_en": "AI sometimes makes up facts that sound right but aren't true." },
+        { "claim_en": "It's like cheating yourself.", "claim_zh": "其实是在骗自己", "example_en": "When the test comes and AI is not there, you'll have nothing to use." }
+      ]
+    },
+    {
+      "id": "ai-teacher",
+      "title_en": "Should AI replace human teachers?",
+      "title_zh": "AI 应该取代真人老师吗？",
+      "pro": [
+        { "claim_en": "AI never gets tired or angry.", "claim_zh": "AI 不会累也不会生气", "example_en": "AI can answer your hundredth question without sounding annoyed." },
+        { "claim_en": "AI gives every kid one-on-one attention.", "claim_zh": "AI 能一对一陪每个孩子", "example_en": "A teacher with 30 students can't help everyone at once — AI can." },
+        { "claim_en": "AI knows almost everything.", "claim_zh": "AI 懂的东西非常多", "example_en": "You can ask AI about any country, animal, or planet, anytime." }
+      ],
+      "con": [
+        { "claim_en": "AI can't see when a kid is sad.", "claim_zh": "AI 看不出孩子心情不好", "example_en": "A real teacher notices when you're about to cry. AI just keeps teaching." },
+        { "claim_en": "AI can't inspire kids the way a real teacher does.", "claim_zh": "AI 无法像真人老师那样点燃热情", "example_en": "My favorite teacher made me love science by telling stories — AI just lists facts." },
+        { "claim_en": "Real teachers care about you as a person.", "claim_zh": "真人老师把你当成一个人", "example_en": "Teachers remember your birthday and give high-fives. AI doesn't." }
+      ]
+    },
+    {
+      "id": "ai-friend",
+      "title_en": "Can AI be a real friend?",
+      "title_zh": "AI 可以算是真朋友吗？",
+      "pro": [
+        { "claim_en": "AI is always there when you want to talk.", "claim_zh": "AI 随时都在", "example_en": "If you can't sleep at midnight, your friends are asleep but AI is awake." },
+        { "claim_en": "AI never judges you.", "claim_zh": "AI 不会嘲笑你", "example_en": "You can tell AI an embarrassing thing, and it won't laugh at you." },
+        { "claim_en": "AI remembers what you like.", "claim_zh": "AI 记得你喜欢什么", "example_en": "AI remembers you love dragons, and brings up dragon stories every time." }
+      ],
+      "con": [
+        { "claim_en": "AI doesn't really feel anything.", "claim_zh": "AI 不是真的有感觉", "example_en": "AI says 'I'm sorry you're sad', but it doesn't actually feel sad with you." },
+        { "claim_en": "AI can't do things with you in real life.", "claim_zh": "AI 没办法和你一起玩真东西", "example_en": "AI can't play tag, share ice cream, or come to your sleepover." },
+        { "claim_en": "Real friends remember your face, voice, and stories.", "claim_zh": "真朋友记得你的脸、你的声音、你的故事", "example_en": "Your best friend spots you on the playground. AI doesn't even know what you look like." }
+      ]
     }
   ]
 }
