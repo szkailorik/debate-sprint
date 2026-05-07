@@ -1,0 +1,36 @@
+{
+  "scenarios": [
+    {
+      "id": "brain-freeze",
+      "situation_en": "Brain freeze (mind goes blank)",
+      "situation_zh": "脑袋空白",
+      "save_en": "Stand tall. Pause for 3 seconds. Say: \"Let me think about that for a moment.\"",
+      "save_zh": "站直。停 3 秒。说：'Let me think about that for a moment.'",
+      "next_step_zh": "然后用 PREP 模板说一遍：观点 → 原因 → 例子 → 重申观点。"
+    },
+    {
+      "id": "didnt-hear",
+      "situation_en": "You didn't hear the opponent clearly",
+      "situation_zh": "没听清对手在说什么",
+      "save_en": "Don't say \"sorry\". Say: \"Could my opponent please repeat that point?\"",
+      "save_zh": "不要说 'sorry'。说：'Could my opponent please repeat that point?'",
+      "next_step_zh": "更礼貌、更有气场，对手反而要重新解释自己。"
+    },
+    {
+      "id": "running-out-of-time",
+      "situation_en": "Time is almost up",
+      "situation_zh": "时间快到了",
+      "save_en": "Skip to the conclusion: \"In conclusion, ___. Thank you.\"",
+      "save_zh": "直接跳总结：'In conclusion, ___. Thank you.'",
+      "next_step_zh": "宁可少讲一点，也要把结尾说完。结尾比中间更重要。"
+    },
+    {
+      "id": "too-nervous",
+      "situation_en": "Too nervous, hands shaking",
+      "situation_zh": "紧张到手抖",
+      "save_en": "Take 3 slow breaths. Look at the judge. Speak slowly.",
+      "save_zh": "深呼吸 3 次。看裁判。慢慢说。",
+      "next_step_zh": "先稳稳说出第一句金句 #1（开场），节奏一找回来就不紧张了。"
+    }
+  ]
+}

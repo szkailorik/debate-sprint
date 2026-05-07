@@ -1,0 +1,154 @@
+{
+  "topics": [
+    {
+      "id": "homework",
+      "title_en": "Should kids have homework?",
+      "title_zh": "小学生应该有作业吗？",
+      "pro": [
+        { "claim_en": "Practice makes perfect.", "claim_zh": "熟能生巧", "example_en": "If you don't practice math at home, you forget it the next day." },
+        { "claim_en": "It teaches responsibility.", "claim_zh": "培养责任感", "example_en": "Doing homework on time is like keeping a promise to yourself." },
+        { "claim_en": "Parents can see what kids are learning.", "claim_zh": "家长能看到学习内容", "example_en": "Mom can help when I get stuck on a tricky question." }
+      ],
+      "con": [
+        { "claim_en": "Kids need time to play and rest.", "claim_zh": "孩子需要玩和休息", "example_en": "Playing with friends teaches teamwork too." },
+        { "claim_en": "School time is already enough.", "claim_zh": "学校时间已经够了", "example_en": "Six hours a day at school is a lot of learning already." },
+        { "claim_en": "Homework can stress kids out.", "claim_zh": "作业让孩子有压力", "example_en": "Some kids cry at night because they have too much to do." }
+      ]
+    },
+    {
+      "id": "phones",
+      "title_en": "Should phones be allowed in school?",
+      "title_zh": "学校应该允许带手机吗？",
+      "pro": [
+        { "claim_en": "Phones help with learning.", "claim_zh": "手机能帮助学习", "example_en": "You can look up a word in a dictionary app right away." },
+        { "claim_en": "Safety in emergencies.", "claim_zh": "紧急情况下保证安全", "example_en": "If a kid feels sick, they can call mom to come pick them up." },
+        { "claim_en": "Kids learn responsibility with technology.", "claim_zh": "学会负责任地用科技", "example_en": "Knowing when to put the phone away is a real-life skill." }
+      ],
+      "con": [
+        { "claim_en": "Phones distract students.", "claim_zh": "手机让学生分心", "example_en": "If a phone buzzes during class, everyone looks at it." },
+        { "claim_en": "They can be used for cheating.", "claim_zh": "可能被用来作弊", "example_en": "A kid could secretly look up answers during a test." },
+        { "claim_en": "Kids talk to friends less in person.", "claim_zh": "孩子之间面对面交流变少", "example_en": "At lunch, kids stare at screens instead of chatting." }
+      ]
+    },
+    {
+      "id": "uniforms",
+      "title_en": "Should school uniforms be required?",
+      "title_zh": "学校应该要求穿校服吗？",
+      "pro": [
+        { "claim_en": "Uniforms make mornings easier.", "claim_zh": "早上准备更简单", "example_en": "You don't have to spend ten minutes deciding what to wear." },
+        { "claim_en": "Everyone looks equal.", "claim_zh": "大家看起来平等", "example_en": "No kid feels bad because their clothes are old or cheap." },
+        { "claim_en": "Uniforms build school spirit.", "claim_zh": "增强学校归属感", "example_en": "When you wear the school colors, you feel like a team." }
+      ],
+      "con": [
+        { "claim_en": "Uniforms limit kids' freedom.", "claim_zh": "限制孩子表达自我", "example_en": "Clothes are one way kids show who they are." },
+        { "claim_en": "Uniforms cost extra money.", "claim_zh": "校服增加家庭开支", "example_en": "Some families have to buy uniforms AND regular clothes." },
+        { "claim_en": "They can be uncomfortable.", "claim_zh": "可能穿着不舒服", "example_en": "On a hot day, a wool blazer makes you sweat a lot." }
+      ]
+    },
+    {
+      "id": "zoos",
+      "title_en": "Are zoos good or bad for animals?",
+      "title_zh": "动物园对动物来说是好还是坏？",
+      "pro": [
+        { "claim_en": "Zoos protect endangered species.", "claim_zh": "保护濒危动物", "example_en": "Pandas are safer in zoos than in forests with poachers." },
+        { "claim_en": "Zoos help kids learn about animals.", "claim_zh": "让孩子认识动物", "example_en": "Most kids will never see a real elephant without a zoo." },
+        { "claim_en": "Zoos take care of sick animals.", "claim_zh": "照顾受伤的动物", "example_en": "If a hawk breaks its wing, the zoo can heal it." }
+      ],
+      "con": [
+        { "claim_en": "Zoo cages are too small.", "claim_zh": "笼子太小", "example_en": "A tiger in the wild walks miles every day, but in a zoo it just paces." },
+        { "claim_en": "Animals get bored and sad.", "claim_zh": "动物会无聊和难过", "example_en": "Some elephants in zoos sway back and forth — that's a sign of stress." },
+        { "claim_en": "Zoos are for human entertainment.", "claim_zh": "更多是给人看的", "example_en": "Animals didn't choose to be on display." }
+      ]
+    },
+    {
+      "id": "pocket-money",
+      "title_en": "Should kids get pocket money?",
+      "title_zh": "孩子应该有零花钱吗？",
+      "pro": [
+        { "claim_en": "Kids learn how to manage money.", "claim_zh": "学会管理钱", "example_en": "If you save your pocket money, you can buy a bigger toy later." },
+        { "claim_en": "It makes kids feel responsible.", "claim_zh": "培养责任感", "example_en": "Having your own money means you decide and live with the choice." },
+        { "claim_en": "Kids can buy small things they need.", "claim_zh": "买自己想要的小东西", "example_en": "You can buy a pencil or snack without asking parents." }
+      ],
+      "con": [
+        { "claim_en": "Some kids spend it all on candy.", "claim_zh": "有些孩子全花在糖上", "example_en": "If you buy candy every day, you'll have nothing left for what really matters." },
+        { "claim_en": "Money can cause arguments.", "claim_zh": "钱容易引起争吵", "example_en": "If your sister gets more pocket money, you might feel jealous." },
+        { "claim_en": "Kids should learn money by working.", "claim_zh": "应该靠做事换钱", "example_en": "Helping with chores for money teaches more than just getting it free." }
+      ]
+    },
+    {
+      "id": "online-learning",
+      "title_en": "Is online learning better than classroom learning?",
+      "title_zh": "网课比课堂学习更好吗？",
+      "pro": [
+        { "claim_en": "You can learn at your own speed.", "claim_zh": "按自己节奏学", "example_en": "If you don't get a math problem, you can pause and rewatch." },
+        { "claim_en": "No travel time.", "claim_zh": "省去上学路上的时间", "example_en": "Kids who live far from school save an hour every day." },
+        { "claim_en": "Access to the best teachers anywhere.", "claim_zh": "能找到全世界最好的老师", "example_en": "A kid in a small town can learn from a famous professor online." }
+      ],
+      "con": [
+        { "claim_en": "It's easy to get distracted at home.", "claim_zh": "在家容易分心", "example_en": "Your toys and TV are right there next to your laptop." },
+        { "claim_en": "Less social time with friends.", "claim_zh": "和朋友相处变少", "example_en": "You can't play tag during lunch break online." },
+        { "claim_en": "Hands-on learning is harder.", "claim_zh": "动手学习困难", "example_en": "You can't really do a science experiment over Zoom." }
+      ]
+    },
+    {
+      "id": "pets",
+      "title_en": "Should every family have a pet?",
+      "title_zh": "每个家庭都应该养宠物吗？",
+      "pro": [
+        { "claim_en": "Pets teach responsibility.", "claim_zh": "宠物培养责任感", "example_en": "Feeding a dog every day teaches kids to keep promises." },
+        { "claim_en": "Pets are good for mental health.", "claim_zh": "对心情有好处", "example_en": "Hugging a cat after a hard day at school makes you feel better." },
+        { "claim_en": "Pets give kids a friend.", "claim_zh": "宠物是孩子的朋友", "example_en": "A child without siblings can grow up with a pet companion." }
+      ],
+      "con": [
+        { "claim_en": "Pets cost a lot of money.", "claim_zh": "养宠物很贵", "example_en": "Vet bills can cost hundreds of dollars when a dog gets sick." },
+        { "claim_en": "Some people are allergic.", "claim_zh": "有人对宠物过敏", "example_en": "A kid with cat allergies could sneeze every day at home." },
+        { "claim_en": "Pets need a lot of time.", "claim_zh": "宠物很费时间", "example_en": "Dogs need walks twice a day, even when you're busy." }
+      ]
+    },
+    {
+      "id": "plastic-bags",
+      "title_en": "Should plastic bags be banned?",
+      "title_zh": "应该禁止使用塑料袋吗？",
+      "pro": [
+        { "claim_en": "Plastic bags hurt sea animals.", "claim_zh": "塑料袋伤害海洋动物", "example_en": "Sea turtles eat floating bags thinking they are jellyfish." },
+        { "claim_en": "They take 500 years to break down.", "claim_zh": "需要 500 年才能降解", "example_en": "A bag thrown out today will still be in the ground when our great-great-grandkids are old." },
+        { "claim_en": "Reusable bags are easy to use.", "claim_zh": "环保袋很好用", "example_en": "One cloth bag can replace hundreds of plastic ones." }
+      ],
+      "con": [
+        { "claim_en": "Plastic bags are cheap and convenient.", "claim_zh": "塑料袋便宜方便", "example_en": "If you forget your bag, you can still carry your groceries home." },
+        { "claim_en": "Banning won't fix the whole problem.", "claim_zh": "禁了也解决不了全部问题", "example_en": "Plastic bottles and packaging cause pollution too." },
+        { "claim_en": "Some bags are reusable.", "claim_zh": "有些塑料袋可以重复用", "example_en": "Many families reuse bags as trash bin liners." }
+      ]
+    },
+    {
+      "id": "tv",
+      "title_en": "Should kids watch TV every day?",
+      "title_zh": "孩子应该每天看电视吗？",
+      "pro": [
+        { "claim_en": "TV can teach new things.", "claim_zh": "电视能教新东西", "example_en": "Nature shows let kids learn about lions without going to Africa." },
+        { "claim_en": "TV is a way to relax.", "claim_zh": "电视让人放松", "example_en": "After a hard school day, watching a cartoon helps kids unwind." },
+        { "claim_en": "Watching English shows improves language.", "claim_zh": "看英文节目能练英语", "example_en": "Many kids learn new English words from cartoons." }
+      ],
+      "con": [
+        { "claim_en": "Too much screen time hurts eyes.", "claim_zh": "看太久伤眼睛", "example_en": "Many kids who watch TV too long start needing glasses." },
+        { "claim_en": "TV takes time away from playing outside.", "claim_zh": "占用户外活动时间", "example_en": "Two hours of TV is two hours of not running and getting fresh air." },
+        { "claim_en": "Some shows have bad content.", "claim_zh": "有些节目内容不好", "example_en": "Kids might copy violent or rude things they see on screen." }
+      ]
+    },
+    {
+      "id": "city-vs-country",
+      "title_en": "Is it better to live in the city or the countryside?",
+      "title_zh": "住城市好还是住乡下好？",
+      "pro": [
+        { "claim_en": "Cities have more opportunities.", "claim_zh": "城市机会多", "example_en": "Big cities have museums, libraries, and special schools." },
+        { "claim_en": "Cities have better hospitals.", "claim_zh": "城市医院更好", "example_en": "If you're really sick, top doctors are usually in big cities." },
+        { "claim_en": "Cities have many friends to meet.", "claim_zh": "城市能认识很多朋友", "example_en": "Your school in a city has hundreds of classmates from many backgrounds." }
+      ],
+      "con": [
+        { "claim_en": "Countryside has cleaner air.", "claim_zh": "乡下空气更干净", "example_en": "In a village, you can see stars at night, but city lights hide them." },
+        { "claim_en": "Country life is calmer and quieter.", "claim_zh": "乡下生活更安静", "example_en": "No car horns at 7am — just birds." },
+        { "claim_en": "More space to play and grow food.", "claim_zh": "有更多空间玩和种东西", "example_en": "A countryside kid can have a big yard to run around in." }
+      ]
+    }
+  ]
+}

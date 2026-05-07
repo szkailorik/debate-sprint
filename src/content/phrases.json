@@ -1,0 +1,84 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "purpose_en": "Opening",
+      "purpose_zh": "开场",
+      "english": "Good morning judges. My name is ___, and I'm here to argue that ___.",
+      "chinese": "评委早上好。我叫___，今天我要论证___。",
+      "scenario_zh": "比赛开始时第一句话。先报名字，再亮立场。"
+    },
+    {
+      "id": 2,
+      "purpose_en": "Stating Position",
+      "purpose_zh": "亮立场",
+      "english": "I strongly believe that ___.",
+      "chinese": "我坚信___。",
+      "scenario_zh": "强调你的核心观点，比 'I think' 更有力。"
+    },
+    {
+      "id": 3,
+      "purpose_en": "Signposting",
+      "purpose_zh": "分点预告",
+      "english": "There are three reasons why I think this.",
+      "chinese": "我有三个理由。",
+      "scenario_zh": "告诉听众接下来要分点讲，让结构清晰。"
+    },
+    {
+      "id": 4,
+      "purpose_en": "Listing",
+      "purpose_zh": "顺序列举",
+      "english": "Firstly, ___. Secondly, ___. Finally, ___.",
+      "chinese": "第一，___。第二，___。最后，___。",
+      "scenario_zh": "三点论证的标准结构词。"
+    },
+    {
+      "id": 5,
+      "purpose_en": "Giving an Example",
+      "purpose_zh": "举例",
+      "english": "Let me give you an example.",
+      "chinese": "我来举个例子。",
+      "scenario_zh": "用例子让你的论证更具体。"
+    },
+    {
+      "id": 6,
+      "purpose_en": "Rebuttal",
+      "purpose_zh": "标准反驳",
+      "english": "My opponent said ___, but I disagree because ___.",
+      "chinese": "对手说___，但我不同意，因为___。",
+      "scenario_zh": "先复述对手观点（显得你认真听了），再反驳。"
+    },
+    {
+      "id": 7,
+      "purpose_en": "Counter-example",
+      "purpose_zh": "反例打绝对化",
+      "english": "That's not always true. For example, ___.",
+      "chinese": "这并不总是对的。比如___。",
+      "scenario_zh": "对手说 always/never/everyone 时用这句。"
+    },
+    {
+      "id": 8,
+      "purpose_en": "Concession",
+      "purpose_zh": "让步反击",
+      "english": "Even if ___ is true, it doesn't mean ___.",
+      "chinese": "就算___是真的，也推不出___。",
+      "scenario_zh": "对手有点道理时承认一半，但拆开他的逻辑链。"
+    },
+    {
+      "id": 9,
+      "purpose_en": "Closing",
+      "purpose_zh": "总结收尾",
+      "english": "For all these reasons, we strongly believe that ___.",
+      "chinese": "基于以上理由，我们坚信___。",
+      "scenario_zh": "结尾陈词的标准开头。"
+    },
+    {
+      "id": 10,
+      "purpose_en": "Sign-off",
+      "purpose_zh": "礼貌结束",
+      "english": "Thank you. We are proud to propose / oppose this motion.",
+      "chinese": "谢谢。我们很自豪地支持/反对这个辩题。",
+      "scenario_zh": "正式结束发言。propose=正方，oppose=反方。"
+    }
+  ]
+}
