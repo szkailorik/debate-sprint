@@ -4,6 +4,8 @@
       "id": "homework",
       "title_en": "Should kids have homework?",
       "title_zh": "小学生应该有作业吗？",
+      "stance_pro_en": "kids should have homework",
+      "stance_con_en": "kids should not have homework",
       "pro": [
         { "claim_en": "Practice makes perfect.", "claim_zh": "熟能生巧", "example_en": "If you don't practice math at home, you forget it the next day." },
         { "claim_en": "It teaches responsibility.", "claim_zh": "培养责任感", "example_en": "Doing homework on time is like keeping a promise to yourself." },
@@ -19,6 +21,8 @@
       "id": "phones",
       "title_en": "Should phones be allowed in school?",
       "title_zh": "学校应该允许带手机吗？",
+      "stance_pro_en": "phones should be allowed in school",
+      "stance_con_en": "phones should not be allowed in school",
       "pro": [
         { "claim_en": "Phones help with learning.", "claim_zh": "手机能帮助学习", "example_en": "You can look up a word in a dictionary app right away." },
         { "claim_en": "Safety in emergencies.", "claim_zh": "紧急情况下保证安全", "example_en": "If a kid feels sick, they can call mom to come pick them up." },
@@ -34,6 +38,8 @@
       "id": "uniforms",
       "title_en": "Should school uniforms be required?",
       "title_zh": "学校应该要求穿校服吗？",
+      "stance_pro_en": "school uniforms should be required",
+      "stance_con_en": "school uniforms should not be required",
       "pro": [
         { "claim_en": "Uniforms make mornings easier.", "claim_zh": "早上准备更简单", "example_en": "You don't have to spend ten minutes deciding what to wear." },
         { "claim_en": "Everyone looks equal.", "claim_zh": "大家看起来平等", "example_en": "No kid feels bad because their clothes are old or cheap." },
@@ -49,6 +55,8 @@
       "id": "zoos",
       "title_en": "Are zoos good or bad for animals?",
       "title_zh": "动物园对动物来说是好还是坏？",
+      "stance_pro_en": "zoos are good for animals",
+      "stance_con_en": "zoos are bad for animals",
       "pro": [
         { "claim_en": "Zoos protect endangered species.", "claim_zh": "保护濒危动物", "example_en": "Pandas are safer in zoos than in forests with poachers." },
         { "claim_en": "Zoos help kids learn about animals.", "claim_zh": "让孩子认识动物", "example_en": "Most kids will never see a real elephant without a zoo." },
@@ -64,6 +72,8 @@
       "id": "pocket-money",
       "title_en": "Should kids get pocket money?",
       "title_zh": "孩子应该有零花钱吗？",
+      "stance_pro_en": "kids should get pocket money",
+      "stance_con_en": "kids should not get pocket money",
       "pro": [
         { "claim_en": "Kids learn how to manage money.", "claim_zh": "学会管理钱", "example_en": "If you save your pocket money, you can buy a bigger toy later." },
         { "claim_en": "It makes kids feel responsible.", "claim_zh": "培养责任感", "example_en": "Having your own money means you decide and live with the choice." },
@@ -79,6 +89,8 @@
       "id": "online-learning",
       "title_en": "Is online learning better than classroom learning?",
       "title_zh": "网课比课堂学习更好吗？",
+      "stance_pro_en": "online learning is better than classroom learning",
+      "stance_con_en": "classroom learning is better than online learning",
       "pro": [
         { "claim_en": "You can learn at your own speed.", "claim_zh": "按自己节奏学", "example_en": "If you don't get a math problem, you can pause and rewatch." },
         { "claim_en": "No travel time.", "claim_zh": "省去上学路上的时间", "example_en": "Kids who live far from school save an hour every day." },
@@ -94,6 +106,8 @@
       "id": "pets",
       "title_en": "Should every family have a pet?",
       "title_zh": "每个家庭都应该养宠物吗？",
+      "stance_pro_en": "every family should have a pet",
+      "stance_con_en": "not every family should have a pet",
       "pro": [
         { "claim_en": "Pets teach responsibility.", "claim_zh": "宠物培养责任感", "example_en": "Feeding a dog every day teaches kids to keep promises." },
         { "claim_en": "Pets are good for mental health.", "claim_zh": "对心情有好处", "example_en": "Hugging a cat after a hard day at school makes you feel better." },
@@ -109,6 +123,8 @@
       "id": "plastic-bags",
       "title_en": "Should plastic bags be banned?",
       "title_zh": "应该禁止使用塑料袋吗？",
+      "stance_pro_en": "plastic bags should be banned",
+      "stance_con_en": "plastic bags should not be banned",
       "pro": [
         { "claim_en": "Plastic bags hurt sea animals.", "claim_zh": "塑料袋伤害海洋动物", "example_en": "Sea turtles eat floating bags thinking they are jellyfish." },
         { "claim_en": "They take 500 years to break down.", "claim_zh": "需要 500 年才能降解", "example_en": "A bag thrown out today will still be in the ground when our great-great-grandkids are old." },
@@ -124,6 +140,8 @@
       "id": "tv",
       "title_en": "Should kids watch TV every day?",
       "title_zh": "孩子应该每天看电视吗？",
+      "stance_pro_en": "kids should watch TV every day",
+      "stance_con_en": "kids should not watch TV every day",
       "pro": [
         { "claim_en": "TV can teach new things.", "claim_zh": "电视能教新东西", "example_en": "Nature shows let kids learn about lions without going to Africa." },
         { "claim_en": "TV is a way to relax.", "claim_zh": "电视让人放松", "example_en": "After a hard school day, watching a cartoon helps kids unwind." },
@@ -139,6 +157,8 @@
       "id": "city-vs-country",
       "title_en": "Is it better to live in the city or the countryside?",
       "title_zh": "住城市好还是住乡下好？",
+      "stance_pro_en": "living in the city is better",
+      "stance_con_en": "living in the countryside is better",
       "pro": [
         { "claim_en": "Cities have more opportunities.", "claim_zh": "城市机会多", "example_en": "Big cities have museums, libraries, and special schools." },
         { "claim_en": "Cities have better hospitals.", "claim_zh": "城市医院更好", "example_en": "If you're really sick, top doctors are usually in big cities." },
@@ -154,6 +174,8 @@
       "id": "homework-ai",
       "title_en": "Should kids use AI to help with homework?",
       "title_zh": "小朋友写作业可以用 AI 吗？",
+      "stance_pro_en": "kids should use AI to help with homework",
+      "stance_con_en": "kids should not use AI to help with homework",
       "pro": [
         { "claim_en": "AI is like a patient tutor at home.", "claim_zh": "AI 就像在家的耐心家教", "example_en": "If you don't understand a math problem, you can ask AI to explain it five different ways until it clicks." },
         { "claim_en": "AI saves time for play and rest.", "claim_zh": "节省时间，能多玩多休息", "example_en": "If AI helps you finish faster, you have more time for soccer or piano." },
@@ -169,6 +191,8 @@
       "id": "ai-teacher",
       "title_en": "Should AI replace human teachers?",
       "title_zh": "AI 应该取代真人老师吗？",
+      "stance_pro_en": "AI should replace human teachers",
+      "stance_con_en": "AI should not replace human teachers",
       "pro": [
         { "claim_en": "AI never gets tired or angry.", "claim_zh": "AI 不会累也不会生气", "example_en": "AI can answer your hundredth question without sounding annoyed." },
         { "claim_en": "AI gives every kid one-on-one attention.", "claim_zh": "AI 能一对一陪每个孩子", "example_en": "A teacher with 30 students can't help everyone at once — AI can." },
@@ -184,6 +208,8 @@
       "id": "ai-friend",
       "title_en": "Can AI be a real friend?",
       "title_zh": "AI 可以算是真朋友吗？",
+      "stance_pro_en": "AI can be a real friend",
+      "stance_con_en": "AI cannot be a real friend",
       "pro": [
         { "claim_en": "AI is always there when you want to talk.", "claim_zh": "AI 随时都在", "example_en": "If you can't sleep at midnight, your friends are asleep but AI is awake." },
         { "claim_en": "AI never judges you.", "claim_zh": "AI 不会嘲笑你", "example_en": "You can tell AI an embarrassing thing, and it won't laugh at you." },

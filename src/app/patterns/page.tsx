@@ -4,6 +4,9 @@ import patternsData from "@/content/patterns.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PageHeader } from "@/components/PageHeader";
 import { EyeIcon } from "@/components/Icons";
+import { Speaker } from "@/components/Speaker";
+
+type PatternId = (typeof patternsData.patterns)[number]["id"];
 
 export default function PatternsPage() {
   const { patterns, questions } = patternsData;
@@ -11,6 +14,11 @@ export default function PatternsPage() {
   const [pickedPattern, setPickedPattern] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(0);
+  const [streak, setStreak] = useState(0);
+  const [bestStreak, setBestStreak] = useState(0);
+  const [byPattern, setByPattern] = useState<
+    Record<string, { correct: number; total: number }>
+  >({});
 
   const q = questions[currentQ];
   const correctPattern = patterns.find((p) => p.id === q.correct_pattern)!;
@@ -21,7 +29,27 @@ export default function PatternsPage() {
     if (inResult) return;
     setPickedPattern(id);
     setAnswered((a) => a + 1);
-    if (id === q.correct_pattern) setScore((s) => s + 1);
+    const right = id === q.correct_pattern;
+    if (right) {
+      setScore((s) => s + 1);
+      setStreak((s) => {
+        const next = s + 1;
+        setBestStreak((b) => Math.max(b, next));
+        return next;
+      });
+    } else {
+      setStreak(0);
+    }
+    setByPattern((bp) => {
+      const cur = bp[q.correct_pattern] ?? { correct: 0, total: 0 };
+      return {
+        ...bp,
+        [q.correct_pattern]: {
+          correct: cur.correct + (right ? 1 : 0),
+          total: cur.total + 1,
+        },
+      };
+    });
   }
 
   function nextQ() {
@@ -36,9 +64,13 @@ export default function PatternsPage() {
     setPickedPattern(null);
     setScore(0);
     setAnswered(0);
+    setStreak(0);
+    setBestStreak(0);
+    setByPattern({});
   }
 
   const isLast = currentQ >= questions.length - 1 && inResult;
+  const isFinished = isLast;
 
   return (
     <>
@@ -47,32 +79,46 @@ export default function PatternsPage() {
         <PageHeader
           title="Pattern Recognition"
           subtitle="See Through the Foe · 识破对手"
-          subtitle_zh="看到对手发言 → 识破套路 → 套用反击模板"
+          subtitle_zh="听对手 → 识破套路 → 套用反击模板（5 招打天下）"
           icon={<EyeIcon className="w-16 h-16" />}
         />
 
-        <div className="flex items-center justify-between mb-6 text-sm">
-          <span className="text-[var(--color-ink-soft)]">
-            Question{" "}
-            <span className="text-[var(--color-ink)] font-bold">{currentQ + 1}</span> /{" "}
-            {questions.length}
-          </span>
-          <span className="text-[var(--color-ink-soft)]">
-            Score:{" "}
-            <span className="text-[var(--color-courage-gold)] font-display font-bold">
-              {score} / {answered}
+        {!isFinished && (
+          <div className="flex items-center justify-between mb-6 text-sm flex-wrap gap-2">
+            <span className="text-[var(--color-ink-soft)]">
+              Q{" "}
+              <span className="text-[var(--color-ink)] font-bold">{currentQ + 1}</span> /{" "}
+              {questions.length}
             </span>
-          </span>
-        </div>
+            <span className="text-[var(--color-ink-soft)]">
+              Score:{" "}
+              <span className="text-[var(--color-courage-gold)] font-display font-bold">
+                {score} / {answered}
+              </span>
+            </span>
+            {streak >= 2 && (
+              <span className="text-[var(--color-danger-red)] font-display font-bold animate-pulse">
+                🔥 {streak} streak!
+              </span>
+            )}
+          </div>
+        )}
 
-        <section className="scroll-card p-6 mb-6">
-          <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">
-            👁 THE OPPONENT SAYS · 对手发言
-          </p>
-          <p className="text-lg text-[var(--color-ink)] italic">&ldquo;{q.opponent_says}&rdquo;</p>
-        </section>
+        {!isFinished && (
+          <section className="scroll-card p-6 mb-6">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)]">
+                👁 THE OPPONENT SAYS · 对手发言
+              </p>
+              <Speaker text={q.opponent_says} size="sm" />
+            </div>
+            <p className="text-lg text-[var(--color-ink)] italic">
+              &ldquo;{q.opponent_says}&rdquo;
+            </p>
+          </section>
+        )}
 
-        {!inResult && (
+        {!inResult && !isFinished && (
           <div>
             <p className="text-center text-[var(--color-ink-soft)] mb-4">
               What&apos;s their weakness? · 对手用了哪一招？
@@ -84,7 +130,9 @@ export default function PatternsPage() {
                   onClick={() => pickPattern(p.id)}
                   className="scroll-card p-4 text-left"
                 >
-                  <div className="font-display text-lg text-[var(--color-ink)]">{p.name_en}</div>
+                  <div className="font-display text-lg text-[var(--color-ink)]">
+                    {p.name_en}
+                  </div>
                   <div className="text-sm text-[var(--color-ink-soft)]">{p.name_zh}</div>
                 </button>
               ))}
@@ -92,15 +140,15 @@ export default function PatternsPage() {
           </div>
         )}
 
-        {inResult && (
+        {inResult && !isFinished && (
           <div>
             <div
               className="scroll-card p-5 mb-4"
-              style={
-                !isCorrect
-                  ? { borderColor: "var(--color-danger-red)" }
-                  : { borderColor: "var(--color-link-green)" }
-              }
+              style={{
+                borderColor: isCorrect
+                  ? "var(--color-link-green)"
+                  : "var(--color-danger-red)",
+              }}
             >
               <p
                 className="font-display text-xl mb-2"
@@ -110,7 +158,9 @@ export default function PatternsPage() {
                     : "var(--color-danger-red)",
                 }}
               >
-                {isCorrect ? "✓ Correct!" : "✗ Not quite"}
+                {isCorrect
+                  ? `✓ Sharp eye! ⚡${streak >= 3 ? ` ${streak} in a row!` : ""}`
+                  : "✗ Not quite"}
               </p>
               <p className="text-sm text-[var(--color-ink-soft)] mb-2">
                 Correct answer:{" "}
@@ -124,25 +174,37 @@ export default function PatternsPage() {
             </div>
 
             <div className="scroll-card p-5 mb-6">
-              <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">
-                ⚔ YOUR COUNTER · 你的反击
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)]">
+                  ⚔ YOUR COUNTER · 你的反击
+                </p>
+                <Speaker text={correctPattern.counter_en} size="sm" />
+              </div>
+              <p className="text-lg text-[var(--color-ink)] mb-2">
+                {correctPattern.counter_en}
               </p>
-              <p className="text-lg text-[var(--color-ink)] mb-2">{correctPattern.counter_en}</p>
-              <p className="text-sm text-[var(--color-ink-soft)]">{correctPattern.counter_zh}</p>
+              <p className="text-sm text-[var(--color-ink-soft)]">
+                {correctPattern.counter_zh}
+              </p>
             </div>
 
-            <div className="flex justify-between items-center">
-              {isLast ? (
-                <button onClick={reset} className="gold-button">
-                  ↻ Play Again · 重玩
-                </button>
-              ) : (
-                <button onClick={nextQ} className="sheikah-button">
-                  Next ▶
-                </button>
-              )}
+            <div className="flex justify-end items-center">
+              <button onClick={nextQ} className="sheikah-button">
+                Next ▶
+              </button>
             </div>
           </div>
+        )}
+
+        {isFinished && (
+          <EndSummary
+            score={score}
+            total={questions.length}
+            bestStreak={bestStreak}
+            patterns={patterns}
+            byPattern={byPattern}
+            onReset={reset}
+          />
         )}
 
         <div className="ornament-divider mt-12" />
@@ -157,12 +219,124 @@ export default function PatternsPage() {
                   {p.name_en} · {p.name_zh}
                 </p>
                 <p className="text-[var(--color-ink-soft)]">{p.description_zh}</p>
-                <p className="text-[var(--color-ink)] mt-1">→ {p.counter_en}</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <p className="text-[var(--color-ink)]">→ {p.counter_en}</p>
+                  <Speaker text={p.counter_en} size="sm" />
+                </div>
               </div>
             ))}
           </div>
         </details>
       </main>
     </>
+  );
+}
+
+function EndSummary({
+  score,
+  total,
+  bestStreak,
+  patterns,
+  byPattern,
+  onReset,
+}: {
+  score: number;
+  total: number;
+  bestStreak: number;
+  patterns: typeof patternsData.patterns;
+  byPattern: Record<string, { correct: number; total: number }>;
+  onReset: () => void;
+}) {
+  const pct = Math.round((score / total) * 100);
+  const grade =
+    pct >= 90
+      ? { emoji: "🏆", label: "Sheikah Master!", msg: "All 5 patterns owned. Bring on the debate." }
+      : pct >= 75
+      ? { emoji: "⚔", label: "Battle Ready", msg: "You can spot most tricks. Review the weak pattern below and you're set." }
+      : pct >= 60
+      ? { emoji: "🛡", label: "Solid Progress", msg: "Halfway there. Run it once more — accuracy jumps fast." }
+      : { emoji: "📜", label: "Keep Training", msg: "Check the 5-pattern cheat sheet, then come back. Every kid gets there." };
+
+  return (
+    <div className="scroll-card p-8">
+      <div className="text-center mb-6">
+        <p className="text-6xl mb-2">{grade.emoji}</p>
+        <h3 className="text-3xl font-display text-[var(--color-ink)] mb-1">
+          {grade.label}
+        </h3>
+        <p className="text-[var(--color-ink-soft)]">{grade.msg}</p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 max-w-md mx-auto mb-6">
+        <div className="border border-[var(--color-courage-gold)]/40 rounded p-4 text-center">
+          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
+            Final Score
+          </p>
+          <p className="text-3xl font-display text-[var(--color-courage-gold)]">
+            {score} / {total}
+          </p>
+        </div>
+        <div className="border border-[var(--color-courage-gold)]/40 rounded p-4 text-center">
+          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
+            🔥 Best Streak
+          </p>
+          <p className="text-3xl font-display text-[var(--color-courage-gold)]">
+            {bestStreak}
+          </p>
+        </div>
+      </div>
+
+      <h4 className="text-sm tracking-[0.3em] text-[var(--color-courage-gold)] mb-3 text-center">
+        PATTERN MASTERY · 各招命中率
+      </h4>
+      <div className="space-y-2 mb-6">
+        {patterns.map((p) => {
+          const stats = byPattern[p.id] ?? { correct: 0, total: 0 };
+          const mastered = stats.total >= 3 && stats.correct === stats.total;
+          return (
+            <div
+              key={p.id}
+              className="flex items-center justify-between border border-[var(--color-courage-gold)]/30 rounded px-4 py-2"
+            >
+              <div className="flex-1">
+                <p className="text-sm font-display text-[var(--color-ink)]">
+                  {mastered && "✓ "}
+                  {p.name_en}{" "}
+                  <span className="text-[var(--color-ink-soft)]">· {p.name_zh}</span>
+                </p>
+              </div>
+              <div className="text-sm">
+                {stats.total > 0 ? (
+                  <>
+                    <span
+                      className={
+                        mastered
+                          ? "text-[var(--color-link-green)] font-display font-bold"
+                          : "text-[var(--color-ink)] font-display"
+                      }
+                    >
+                      {stats.correct}/{stats.total}
+                    </span>
+                    {mastered && (
+                      <span className="ml-2 text-xs text-[var(--color-link-green)]">
+                        Mastered!
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <span className="text-[var(--color-ink-soft)]">—</span>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="text-center">
+        <button onClick={onReset} className="gold-button">
+          ↻ Play Again · 再战一轮
+        </button>
+      </div>
+    </div>
   );
 }

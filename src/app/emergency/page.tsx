@@ -2,6 +2,7 @@ import emergencyData from "@/content/emergency.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PageHeader } from "@/components/PageHeader";
 import { PotionIcon } from "@/components/Icons";
+import { Speaker } from "@/components/Speaker";
 
 export default function EmergencyPage() {
   const { scenarios } = emergencyData;
@@ -27,9 +28,12 @@ export default function EmergencyPage() {
               </p>
               <p className="text-sm text-[var(--color-ink-soft)] mb-4">{s.situation_zh}</p>
 
-              <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">
-                🧪 SAY · 救急话术
-              </p>
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)]">
+                  🧪 SAY · 救急话术
+                </p>
+                <Speaker text={s.save_en} size="sm" />
+              </div>
               <p className="text-[var(--color-ink)] mb-1">{s.save_en}</p>
               <p className="text-sm text-[var(--color-ink-soft)] mb-3">{s.save_zh}</p>
 
