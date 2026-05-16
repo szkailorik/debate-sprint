@@ -40,7 +40,7 @@ export default async function TopicPage(props: Props) {
               PRO
             </h2>
             <p className="text-sm text-[var(--color-ink-soft)] mb-4">
-              支持方 · Yes / Should
+              支持方 · &ldquo;{topic.stance_pro_en}&rdquo;
             </p>
             {topic.pro.map((p, i) => (
               <div key={i} className="mb-4">
@@ -56,6 +56,12 @@ export default async function TopicPage(props: Props) {
                 </p>
               </div>
             ))}
+            <Link
+              href={`/structure/?topic=${topic.id}&stance=pro`}
+              className="sheikah-button w-full text-sm mt-2"
+            >
+              ⚔ Practice PREP (PRO) · 拿这题练
+            </Link>
           </section>
 
           <section className="scroll-card p-6">
@@ -63,7 +69,7 @@ export default async function TopicPage(props: Props) {
               CON
             </h2>
             <p className="text-sm text-[var(--color-ink-soft)] mb-4">
-              反对方 · No / Should Not
+              反对方 · &ldquo;{topic.stance_con_en}&rdquo;
             </p>
             {topic.con.map((c, i) => (
               <div key={i} className="mb-4">
@@ -79,6 +85,12 @@ export default async function TopicPage(props: Props) {
                 </p>
               </div>
             ))}
+            <Link
+              href={`/structure/?topic=${topic.id}&stance=con`}
+              className="sheikah-button w-full text-sm mt-2"
+            >
+              ⚔ Practice PREP (CON) · 拿这题练
+            </Link>
           </section>
         </div>
       </main>

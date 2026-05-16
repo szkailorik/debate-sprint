@@ -1,11 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import phrasesData from "@/content/phrases.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PageHeader } from "@/components/PageHeader";
 import { StarIcon } from "@/components/Icons";
 import { Speaker } from "@/components/Speaker";
+import { recordPhraseQuiz } from "@/lib/progress";
 
 type Phrase = (typeof phrasesData.phrases)[number];
 type Mode = "read" | "quiz";
@@ -151,6 +152,12 @@ function QuizMode({ phrases }: { phrases: Phrase[] }) {
   }
 
   const finished = idx >= questions.length;
+
+  // Record progress once when the round finishes.
+  useEffect(() => {
+    if (finished) recordPhraseQuiz(score, questions.length);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
 
   if (finished) {
     const pct = Math.round((score / questions.length) * 100);

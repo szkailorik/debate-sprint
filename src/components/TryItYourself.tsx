@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import topicsData from "@/content/topics.json";
 import { Speaker } from "./Speaker";
+import { recordPrepTry } from "@/lib/progress";
 
 type Stance = "pro" | "con";
 
@@ -10,6 +11,9 @@ type Stance = "pro" | "con";
  * Interactive PREP fill-in for any topic.
  * Pick a topic + side, type your own 4 lines, then reveal an expert version to compare.
  * Goal: kid leaves the page thinking "I can already do PREP on any topic".
+ *
+ * Supports URL params ?topic=<id>&stance=<pro|con> so the topic detail page
+ * can deep-link in pre-loaded.
  */
 export function TryItYourself() {
   const { topics } = topicsData;
@@ -17,6 +21,26 @@ export function TryItYourself() {
   const [stance, setStance] = useState<Stance>("pro");
   const [sampleIdx, setSampleIdx] = useState<number | null>(null);
   const [userInputs, setUserInputs] = useState({ p1: "", r: "", e: "", p2: "" });
+
+  // Pre-load topic + stance from URL params (set by topic detail page CTAs).
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get("topic");
+    const s = params.get("stance");
+    if (t && topics.some((x) => x.id === t)) {
+      setTopicId(t);
+    }
+    if (s === "con") setStance("con");
+    // Scroll into view if deep-linked.
+    if (t || s) {
+      setTimeout(() => {
+        const el = document.getElementById("try-it-yourself");
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const topic = useMemo(
     () => topics.find((t) => t.id === topicId) ?? topics[0],
@@ -43,7 +67,13 @@ export function TryItYourself() {
   }
 
   function cycleSample() {
-    setSampleIdx((cur) => (cur === null ? 0 : (cur + 1) % claims.length));
+    setSampleIdx((cur) => {
+      const wasNull = cur === null;
+      const next = wasNull ? 0 : (cur + 1) % claims.length;
+      // Record on first reveal of a session — count as one PREP try.
+      if (wasNull) recordPrepTry();
+      return next;
+    });
   }
 
   const samplePoint = `I strongly believe that ${stanceStmt}.`;
@@ -54,7 +84,8 @@ export function TryItYourself() {
 
   return (
     <section
-      className="scroll-card p-6 md:p-8 mb-8"
+      id="try-it-yourself"
+      className="scroll-card p-6 md:p-8 mb-8 scroll-mt-20"
       style={{ borderColor: "var(--color-sheikah)" }}
     >
       <p className="text-xs tracking-[0.3em] text-[var(--color-sheikah)] mb-2">

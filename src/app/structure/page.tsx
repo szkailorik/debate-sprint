@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ScrollIcon } from "@/components/Icons";
 import { Speaker } from "@/components/Speaker";
 import { TryItYourself } from "@/components/TryItYourself";
+import { SpeechTimer } from "@/components/SpeechTimer";
 
 const TEMPLATES = [
   {
@@ -97,6 +98,9 @@ export default function StructurePage() {
 
         {/* The hands-on practice section — kid leaves here saying "I can do PREP". */}
         <TryItYourself />
+
+        {/* The actual rehearsal — speak out loud under timer pressure. */}
+        <SpeechTimer />
 
         <div className="ornament-divider" />
         <h2 className="text-center text-2xl font-display text-[var(--color-ink)] mb-2">

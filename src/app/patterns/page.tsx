@@ -1,10 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import patternsData from "@/content/patterns.json";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PageHeader } from "@/components/PageHeader";
 import { EyeIcon } from "@/components/Icons";
 import { Speaker } from "@/components/Speaker";
+import { recordPatternsGame } from "@/lib/progress";
 
 type PatternId = (typeof patternsData.patterns)[number]["id"];
 
@@ -71,6 +72,12 @@ export default function PatternsPage() {
 
   const isLast = currentQ >= questions.length - 1 && inResult;
   const isFinished = isLast;
+
+  // Record progress once when game finishes.
+  useEffect(() => {
+    if (isFinished) recordPatternsGame(score, questions.length, bestStreak);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isFinished]);
 
   return (
     <>

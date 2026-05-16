@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { ModuleTile } from "@/components/ModuleTile";
 import { SiteHeader } from "@/components/SiteHeader";
-import { ShardCounter } from "@/components/ShardCounter";
+import {
+  ProgressShards,
+  ShardLegend,
+  ProgressStats,
+} from "@/components/ProgressBanner";
 import {
   ScrollIcon,
   StarIcon,
@@ -64,11 +68,11 @@ export default function Home() {
             今日试炼 · Speak with structure, fight with wisdom
           </p>
           <div className="ornament-divider" />
-          <ShardCounter collected={0} />
-          <p className="text-[var(--color-ink-soft)] text-sm mt-3">
-            5 Trials · 5 件兵器 · 集齐即出师
-          </p>
+          <ProgressShards />
+          <ShardLegend />
         </div>
+
+        <ProgressStats />
 
         {/* FIRST TIME? section — the one obvious next step for a nervous new debater. */}
         <section
