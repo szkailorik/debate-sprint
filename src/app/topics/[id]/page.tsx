@@ -51,9 +51,10 @@ export default async function TopicPage(props: Props) {
                 <p className="text-sm text-[var(--color-ink-soft)] mb-1 ml-6">
                   {p.claim_zh}
                 </p>
-                <p className="text-sm text-[var(--color-ink-soft)] border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic ml-6">
-                  e.g. {p.example_en}
-                </p>
+                <div className="text-sm border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic ml-6">
+                  <p className="text-[var(--color-ink)]">e.g. {p.example_en}</p>
+                  <p className="text-[var(--color-ink-soft)] text-xs">例：{p.example_zh}</p>
+                </div>
               </div>
             ))}
             <Link
@@ -80,9 +81,10 @@ export default async function TopicPage(props: Props) {
                 <p className="text-sm text-[var(--color-ink-soft)] mb-1 ml-6">
                   {c.claim_zh}
                 </p>
-                <p className="text-sm text-[var(--color-ink-soft)] border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic ml-6">
-                  e.g. {c.example_en}
-                </p>
+                <div className="text-sm border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic ml-6">
+                  <p className="text-[var(--color-ink)]">e.g. {c.example_en}</p>
+                  <p className="text-[var(--color-ink-soft)] text-xs">例：{c.example_zh}</p>
+                </div>
               </div>
             ))}
             <Link

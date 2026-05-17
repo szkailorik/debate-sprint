@@ -89,19 +89,23 @@ export default function Home() {
             style={{ borderColor: "var(--color-sheikah)" }}
           >
             <p className="text-xs tracking-[0.3em] text-[var(--color-sheikah)] mb-2">
-              ⚔ NEW TO DEBATE?
+              ⚔ NEW TO DEBATE? · 第一次接触辩论？
             </p>
-            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-2">
-              先学会 PREP
+            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-1">
+              Learn PREP First
             </h2>
-            <p className="text-[var(--color-ink-soft)] text-sm mb-4">
+            <p className="text-base text-[var(--color-ink-soft)] mb-3">先学会 PREP</p>
+            <p className="text-sm text-[var(--color-ink)] mb-1">
+              PREP is the backbone of every debate. Learn it in 3 minutes — you can speak on any topic.
+            </p>
+            <p className="text-xs text-[var(--color-ink-soft)] mb-4">
               PREP 是辩论的骨架。3 分钟学会，任何题目你都能开口。
             </p>
             <Link
               href="/structure"
               className="sheikah-button text-sm whitespace-nowrap"
             >
-              ▶ Learn PREP
+              ▶ Learn PREP · 开始学
             </Link>
           </section>
 
@@ -111,19 +115,24 @@ export default function Home() {
             style={{ borderColor: "var(--color-courage-gold-bright)" }}
           >
             <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">
-              📋 GOT YOUR MOTION?
+              📋 GOT YOUR MOTION? · 拿到题目了？
             </p>
-            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-2">
-              战前 7 步备战
+            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-1">
+              7-Step Battle Plan
             </h2>
-            <p className="text-[var(--color-ink-soft)] text-sm mb-4">
+            <p className="text-base text-[var(--color-ink-soft)] mb-3">战前 7 步备战</p>
+            <p className="text-sm text-[var(--color-ink)] mb-1">
+              Once you&apos;ve been assigned a motion, follow the checklist:
+              understand → reasons → examples → draft → counter → rehearse → ritual.
+            </p>
+            <p className="text-xs text-[var(--color-ink-soft)] mb-4">
               抽到辩题以后照清单做：理解 → 论点 → 例子 → 写稿 → 反击 → 练习 → 临场。
             </p>
             <Link
               href="/battle-plan"
               className="gold-button text-sm whitespace-nowrap"
             >
-              ▶ Open Plan
+              ▶ Open Plan · 打开清单
             </Link>
           </section>
         </div>
@@ -140,7 +149,7 @@ export default function Home() {
         <div className="ornament-divider mt-16" />
         <div className="text-center">
           <p className="text-[var(--color-ink-soft)] text-sm">
-            ⚔ 每天 15 分钟，一周后你就敢站到台上 ⚔
+            ⚔ 15 min a day · 每天 15 分钟，一周后你就敢站到台上 ⚔
           </p>
         </div>
       </main>

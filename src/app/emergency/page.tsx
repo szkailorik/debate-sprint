@@ -37,9 +37,10 @@ export default function EmergencyPage() {
               <p className="text-[var(--color-ink)] mb-1">{s.save_en}</p>
               <p className="text-sm text-[var(--color-ink-soft)] mb-3">{s.save_zh}</p>
 
-              <p className="text-xs text-[var(--color-ink-soft)] border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic">
-                💡 {s.next_step_zh}
-              </p>
+              <div className="text-xs border-l-2 border-[var(--color-courage-gold)]/40 pl-3 italic">
+                <p className="text-[var(--color-ink)]">💡 {s.next_step_en}</p>
+                <p className="text-[var(--color-ink-soft)]">{s.next_step_zh}</p>
+              </div>
             </div>
           ))}
         </div>

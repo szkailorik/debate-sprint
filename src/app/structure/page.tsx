@@ -89,11 +89,13 @@ export default function StructurePage() {
           icon={<ScrollIcon className="w-16 h-16" />}
         />
 
-        <p className="text-[var(--color-ink-soft)] text-center mb-10 max-w-2xl mx-auto">
-          PREP 是 <strong className="text-[var(--color-ink)]">P</strong>oint →{" "}
-          <strong className="text-[var(--color-ink)]">R</strong>eason →{" "}
-          <strong className="text-[var(--color-ink)]">E</strong>xample →{" "}
-          <strong className="text-[var(--color-ink)]">P</strong>oint。 四步说话法。这是你最重要的武器。
+        <p className="text-[var(--color-ink)] text-center mb-1 max-w-2xl mx-auto">
+          PREP = <strong>P</strong>oint → <strong>R</strong>eason →{" "}
+          <strong>E</strong>xample → <strong>P</strong>oint. A four-step way to speak.
+          Your most important weapon.
+        </p>
+        <p className="text-[var(--color-ink-soft)] text-center mb-10 max-w-2xl mx-auto text-sm">
+          PREP 就是 P → R → E → P 四步说话法。这是你最重要的武器。
         </p>
 
         {/* The hands-on practice section — kid leaves here saying "I can do PREP". */}
@@ -106,6 +108,9 @@ export default function StructurePage() {
         <h2 className="text-center text-2xl font-display text-[var(--color-ink)] mb-2">
           3 Variants · 三种变体
         </h2>
+        <p className="text-center text-sm text-[var(--color-ink)] mb-0">
+          Constructive / Rebuttal / Summary — all three use the same idea.
+        </p>
         <p className="text-center text-sm text-[var(--color-ink-soft)] mb-8">
           立论 / 反驳 / 总结，三种发言都能用同一种思路。
         </p>

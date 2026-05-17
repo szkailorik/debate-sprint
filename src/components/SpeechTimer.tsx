@@ -88,10 +88,14 @@ export function SpeechTimer() {
         ⏱ MOCK SPEECH · 模拟演讲
       </p>
       <h2 className="text-2xl font-display text-[var(--color-ink)] mb-1">
-        Speak Out Loud With a Timer
+        Speak Out Loud With a Timer · 计时实战
       </h2>
+      <p className="text-sm text-[var(--color-ink)] mb-1">
+        Pick topic → pick duration → countdown starts. <strong>Actually open your mouth</strong>,
+        tick each PREP step as you finish it. Closest thing to the real match.
+      </p>
       <p className="text-sm text-[var(--color-ink-soft)] mb-5">
-        选题 → 选时长 → 开始倒计时。**真的张口说**，每讲完一步就 ✓ 打勾。这是最接近上场的训练。
+        选题 → 选时长 → 开始倒计时。<strong>真的张口说</strong>，每讲完一步就 ✓ 打勾。这是最接近上场的训练。
       </p>
 
       {phase === "idle" && (
@@ -99,7 +103,7 @@ export function SpeechTimer() {
           <div className="space-y-4 mb-5">
             <div className="flex flex-wrap items-center gap-3">
               <label className="text-xs text-[var(--color-ink-soft)] uppercase tracking-wider">
-                Topic
+                Topic · 辩题
               </label>
               <select
                 value={topicId}
@@ -138,7 +142,7 @@ export function SpeechTimer() {
 
             <div className="flex flex-wrap items-center gap-3">
               <label className="text-xs text-[var(--color-ink-soft)] uppercase tracking-wider">
-                Duration
+                Duration · 时长
               </label>
               {DURATIONS.map((d) => (
                 <button
@@ -157,12 +161,12 @@ export function SpeechTimer() {
           </div>
 
           <div className="mb-5 p-3 bg-[var(--color-parchment-light)] border border-[var(--color-courage-gold)]/30 rounded text-sm">
-            <span className="text-[var(--color-ink-soft)]">Your stance: </span>
+            <span className="text-[var(--color-ink-soft)]">Your stance · 你的立场: </span>
             <span className="text-[var(--color-ink)] font-medium">{stanceStmt}.</span>
           </div>
 
           <button onClick={start} className="gold-button text-base">
-            ▶ START · 开始 {duration}s
+            ▶ START {duration}s · 开始倒计时
           </button>
         </>
       )}
@@ -178,7 +182,9 @@ export function SpeechTimer() {
               {formattedTime}
             </p>
             <p className="text-sm text-[var(--color-ink-soft)] mt-1">
-              {timeWarn ? "快收尾！跳总结！" : "说出来！每讲完一步就 ✓"}
+              {timeWarn
+                ? "Wrap up! Jump to conclusion · 快收尾！跳总结！"
+                : "Speak out loud! ✓ each step as you go · 说出来！每讲完一步就 ✓"}
             </p>
           </div>
 
@@ -211,7 +217,7 @@ export function SpeechTimer() {
 
           <div className="flex justify-between items-center">
             <p className="text-xs text-[var(--color-ink-soft)]">
-              {Object.values(checks).filter(Boolean).length} / 4 steps ✓
+              {Object.values(checks).filter(Boolean).length} / 4 steps ✓ · 步骤已完成
             </p>
             <button onClick={stop} className="sheikah-button">
               ⏹ Done · 提前结束
@@ -225,14 +231,29 @@ export function SpeechTimer() {
           <p className="text-6xl mb-2">{allChecked ? "🏆" : elapsed >= duration / 2 ? "⚡" : "📜"}</p>
           <h3 className="text-2xl font-display text-[var(--color-ink)] mb-2">
             {allChecked
-              ? `Full PREP in ${elapsed}s! · 4 步都说完了！`
-              : `Speech finished · 说了 ${elapsed}s`}
+              ? `Full PREP in ${elapsed}s! · ${elapsed} 秒内说完 4 步！`
+              : `Speech finished in ${elapsed}s · 说了 ${elapsed} 秒`}
           </h3>
-          <p className="text-[var(--color-ink-soft)] mb-4 max-w-md mx-auto">
-            {allChecked
-              ? "💪 你刚刚做完了一次完整辩论发言。多练几个题目，自信会指数级上涨。"
-              : `${4 - Object.values(checks).filter(Boolean).length} 步还没打勾——再来一次，这次说慢点也没关系。`}
-          </p>
+          {allChecked ? (
+            <>
+              <p className="text-[var(--color-ink)] mb-1 max-w-md mx-auto">
+                💪 You just completed a full debate speech. Try more topics — confidence stacks fast.
+              </p>
+              <p className="text-[var(--color-ink-soft)] mb-4 max-w-md mx-auto text-sm">
+                你刚刚做完了一次完整辩论发言。多练几个题目，自信会指数级上涨。
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-[var(--color-ink)] mb-1 max-w-md mx-auto">
+                {4 - Object.values(checks).filter(Boolean).length} steps weren&apos;t checked
+                — try again, slower this time.
+              </p>
+              <p className="text-[var(--color-ink-soft)] mb-4 max-w-md mx-auto text-sm">
+                还有 {4 - Object.values(checks).filter(Boolean).length} 步没打勾 —— 再来一次，这次说慢点没关系。
+              </p>
+            </>
+          )}
           <div className="flex justify-center gap-2 flex-wrap">
             <button onClick={reset} className="gold-button">
               ↻ Another Round · 再来一次

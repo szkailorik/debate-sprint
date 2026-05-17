@@ -7,14 +7,14 @@
       "stance_pro_en": "kids should have homework",
       "stance_con_en": "kids should not have homework",
       "pro": [
-        { "claim_en": "Practice makes perfect.", "claim_zh": "熟能生巧", "example_en": "If you don't practice math at home, you forget it the next day." },
-        { "claim_en": "It teaches responsibility.", "claim_zh": "培养责任感", "example_en": "Doing homework on time is like keeping a promise to yourself." },
-        { "claim_en": "Parents can see what kids are learning.", "claim_zh": "家长能看到学习内容", "example_en": "Mom can help when I get stuck on a tricky question." }
+        { "claim_en": "Practice makes perfect.", "claim_zh": "熟能生巧", "example_en": "If you don't practice math at home, you forget it the next day.", "example_zh": "数学不在家练，第二天就忘了。" },
+        { "claim_en": "It teaches responsibility.", "claim_zh": "培养责任感", "example_en": "Doing homework on time is like keeping a promise to yourself.", "example_zh": "按时做作业，就像对自己守承诺。" },
+        { "claim_en": "Parents can see what kids are learning.", "claim_zh": "家长能看到学习内容", "example_en": "Mom can help when I get stuck on a tricky question.", "example_zh": "遇到难题，妈妈可以帮忙。" }
       ],
       "con": [
-        { "claim_en": "Kids need time to play and rest.", "claim_zh": "孩子需要玩和休息", "example_en": "Playing with friends teaches teamwork too." },
-        { "claim_en": "School time is already enough.", "claim_zh": "学校时间已经够了", "example_en": "Six hours a day at school is a lot of learning already." },
-        { "claim_en": "Homework can stress kids out.", "claim_zh": "作业让孩子有压力", "example_en": "Some kids cry at night because they have too much to do." }
+        { "claim_en": "Kids need time to play and rest.", "claim_zh": "孩子需要玩和休息", "example_en": "Playing with friends teaches teamwork too.", "example_zh": "和朋友玩也能学到团队合作。" },
+        { "claim_en": "School time is already enough.", "claim_zh": "学校时间已经够了", "example_en": "Six hours a day at school is a lot of learning already.", "example_zh": "学校已经学了 6 小时，已经够多了。" },
+        { "claim_en": "Homework can stress kids out.", "claim_zh": "作业让孩子有压力", "example_en": "Some kids cry at night because they have too much to do.", "example_zh": "有些孩子晚上因为作业太多而哭。" }
       ]
     },
     {
@@ -24,14 +24,14 @@
       "stance_pro_en": "phones should be allowed in school",
       "stance_con_en": "phones should not be allowed in school",
       "pro": [
-        { "claim_en": "Phones help with learning.", "claim_zh": "手机能帮助学习", "example_en": "You can look up a word in a dictionary app right away." },
-        { "claim_en": "Safety in emergencies.", "claim_zh": "紧急情况下保证安全", "example_en": "If a kid feels sick, they can call mom to come pick them up." },
-        { "claim_en": "Kids learn responsibility with technology.", "claim_zh": "学会负责任地用科技", "example_en": "Knowing when to put the phone away is a real-life skill." }
+        { "claim_en": "Phones help with learning.", "claim_zh": "手机能帮助学习", "example_en": "You can look up a word in a dictionary app right away.", "example_zh": "可以马上用字典 App 查单词。" },
+        { "claim_en": "Safety in emergencies.", "claim_zh": "紧急情况下保证安全", "example_en": "If a kid feels sick, they can call mom to come pick them up.", "example_zh": "如果不舒服，可以打给妈妈来接。" },
+        { "claim_en": "Kids learn responsibility with technology.", "claim_zh": "学会负责任地用科技", "example_en": "Knowing when to put the phone away is a real-life skill.", "example_zh": "知道什么时候放下手机，是一种生活技能。" }
       ],
       "con": [
-        { "claim_en": "Phones distract students.", "claim_zh": "手机让学生分心", "example_en": "If a phone buzzes during class, everyone looks at it." },
-        { "claim_en": "They can be used for cheating.", "claim_zh": "可能被用来作弊", "example_en": "A kid could secretly look up answers during a test." },
-        { "claim_en": "Kids talk to friends less in person.", "claim_zh": "孩子之间面对面交流变少", "example_en": "At lunch, kids stare at screens instead of chatting." }
+        { "claim_en": "Phones distract students.", "claim_zh": "手机让学生分心", "example_en": "If a phone buzzes during class, everyone looks at it.", "example_zh": "上课手机一震，全班都会看过去。" },
+        { "claim_en": "They can be used for cheating.", "claim_zh": "可能被用来作弊", "example_en": "A kid could secretly look up answers during a test.", "example_zh": "考试的时候可以偷偷查答案。" },
+        { "claim_en": "Kids talk to friends less in person.", "claim_zh": "孩子之间面对面交流变少", "example_en": "At lunch, kids stare at screens instead of chatting.", "example_zh": "午餐时孩子盯着屏幕，不再聊天。" }
       ]
     },
     {
@@ -41,14 +41,14 @@
       "stance_pro_en": "school uniforms should be required",
       "stance_con_en": "school uniforms should not be required",
       "pro": [
-        { "claim_en": "Uniforms make mornings easier.", "claim_zh": "早上准备更简单", "example_en": "You don't have to spend ten minutes deciding what to wear." },
-        { "claim_en": "Everyone looks equal.", "claim_zh": "大家看起来平等", "example_en": "No kid feels bad because their clothes are old or cheap." },
-        { "claim_en": "Uniforms build school spirit.", "claim_zh": "增强学校归属感", "example_en": "When you wear the school colors, you feel like a team." }
+        { "claim_en": "Uniforms make mornings easier.", "claim_zh": "早上准备更简单", "example_en": "You don't have to spend ten minutes deciding what to wear.", "example_zh": "不用花 10 分钟想穿什么。" },
+        { "claim_en": "Everyone looks equal.", "claim_zh": "大家看起来平等", "example_en": "No kid feels bad because their clothes are old or cheap.", "example_zh": "没有孩子会因为衣服旧或便宜而难过。" },
+        { "claim_en": "Uniforms build school spirit.", "claim_zh": "增强学校归属感", "example_en": "When you wear the school colors, you feel like a team.", "example_zh": "穿上校服的颜色，感觉像一个团队。" }
       ],
       "con": [
-        { "claim_en": "Uniforms limit kids' freedom.", "claim_zh": "限制孩子表达自我", "example_en": "Clothes are one way kids show who they are." },
-        { "claim_en": "Uniforms cost extra money.", "claim_zh": "校服增加家庭开支", "example_en": "Some families have to buy uniforms AND regular clothes." },
-        { "claim_en": "They can be uncomfortable.", "claim_zh": "可能穿着不舒服", "example_en": "On a hot day, a wool blazer makes you sweat a lot." }
+        { "claim_en": "Uniforms limit kids' freedom.", "claim_zh": "限制孩子表达自我", "example_en": "Clothes are one way kids show who they are.", "example_zh": "穿什么是孩子表达自己的方式之一。" },
+        { "claim_en": "Uniforms cost extra money.", "claim_zh": "校服增加家庭开支", "example_en": "Some families have to buy uniforms AND regular clothes.", "example_zh": "有些家庭得既买校服又买常服。" },
+        { "claim_en": "They can be uncomfortable.", "claim_zh": "可能穿着不舒服", "example_en": "On a hot day, a wool blazer makes you sweat a lot.", "example_zh": "大热天穿羊毛西装会出一身汗。" }
       ]
     },
     {
@@ -58,14 +58,14 @@
       "stance_pro_en": "zoos are good for animals",
       "stance_con_en": "zoos are bad for animals",
       "pro": [
-        { "claim_en": "Zoos protect endangered species.", "claim_zh": "保护濒危动物", "example_en": "Pandas are safer in zoos than in forests with poachers." },
-        { "claim_en": "Zoos help kids learn about animals.", "claim_zh": "让孩子认识动物", "example_en": "Most kids will never see a real elephant without a zoo." },
-        { "claim_en": "Zoos take care of sick animals.", "claim_zh": "照顾受伤的动物", "example_en": "If a hawk breaks its wing, the zoo can heal it." }
+        { "claim_en": "Zoos protect endangered species.", "claim_zh": "保护濒危动物", "example_en": "Pandas are safer in zoos than in forests with poachers.", "example_zh": "熊猫在动物园里比在有偷猎者的森林里更安全。" },
+        { "claim_en": "Zoos help kids learn about animals.", "claim_zh": "让孩子认识动物", "example_en": "Most kids will never see a real elephant without a zoo.", "example_zh": "没有动物园，大多数孩子一辈子都见不到真大象。" },
+        { "claim_en": "Zoos take care of sick animals.", "claim_zh": "照顾受伤的动物", "example_en": "If a hawk breaks its wing, the zoo can heal it.", "example_zh": "鹰翅膀断了，动物园可以治好它。" }
       ],
       "con": [
-        { "claim_en": "Zoo cages are too small.", "claim_zh": "笼子太小", "example_en": "A tiger in the wild walks miles every day, but in a zoo it just paces." },
-        { "claim_en": "Animals get bored and sad.", "claim_zh": "动物会无聊和难过", "example_en": "Some elephants in zoos sway back and forth — that's a sign of stress." },
-        { "claim_en": "Zoos are for human entertainment.", "claim_zh": "更多是给人看的", "example_en": "Animals didn't choose to be on display." }
+        { "claim_en": "Zoo cages are too small.", "claim_zh": "笼子太小", "example_en": "A tiger in the wild walks miles every day, but in a zoo it just paces.", "example_zh": "老虎在野外每天走很远，但在动物园只能来回踱步。" },
+        { "claim_en": "Animals get bored and sad.", "claim_zh": "动物会无聊和难过", "example_en": "Some elephants in zoos sway back and forth — that's a sign of stress.", "example_zh": "动物园里的大象前后摇晃，是压力大的信号。" },
+        { "claim_en": "Zoos are for human entertainment.", "claim_zh": "更多是给人看的", "example_en": "Animals didn't choose to be on display.", "example_zh": "动物又没选择要被人看。" }
       ]
     },
     {
@@ -75,14 +75,14 @@
       "stance_pro_en": "kids should get pocket money",
       "stance_con_en": "kids should not get pocket money",
       "pro": [
-        { "claim_en": "Kids learn how to manage money.", "claim_zh": "学会管理钱", "example_en": "If you save your pocket money, you can buy a bigger toy later." },
-        { "claim_en": "It makes kids feel responsible.", "claim_zh": "培养责任感", "example_en": "Having your own money means you decide and live with the choice." },
-        { "claim_en": "Kids can buy small things they need.", "claim_zh": "买自己想要的小东西", "example_en": "You can buy a pencil or snack without asking parents." }
+        { "claim_en": "Kids learn how to manage money.", "claim_zh": "学会管理钱", "example_en": "If you save your pocket money, you can buy a bigger toy later.", "example_zh": "存零花钱，以后可以买更大的玩具。" },
+        { "claim_en": "It makes kids feel responsible.", "claim_zh": "培养责任感", "example_en": "Having your own money means you decide and live with the choice.", "example_zh": "有自己的钱，就要自己做决定，自己承担。" },
+        { "claim_en": "Kids can buy small things they need.", "claim_zh": "买自己想要的小东西", "example_en": "You can buy a pencil or snack without asking parents.", "example_zh": "买铅笔或零食不用问爸妈。" }
       ],
       "con": [
-        { "claim_en": "Some kids spend it all on candy.", "claim_zh": "有些孩子全花在糖上", "example_en": "If you buy candy every day, you'll have nothing left for what really matters." },
-        { "claim_en": "Money can cause arguments.", "claim_zh": "钱容易引起争吵", "example_en": "If your sister gets more pocket money, you might feel jealous." },
-        { "claim_en": "Kids should learn money by working.", "claim_zh": "应该靠做事换钱", "example_en": "Helping with chores for money teaches more than just getting it free." }
+        { "claim_en": "Some kids spend it all on candy.", "claim_zh": "有些孩子全花在糖上", "example_en": "If you buy candy every day, you'll have nothing left for what really matters.", "example_zh": "每天买糖，重要的东西就没钱买了。" },
+        { "claim_en": "Money can cause arguments.", "claim_zh": "钱容易引起争吵", "example_en": "If your sister gets more pocket money, you might feel jealous.", "example_zh": "妹妹零花钱比你多，你可能会嫉妒。" },
+        { "claim_en": "Kids should learn money by working.", "claim_zh": "应该靠做事换钱", "example_en": "Helping with chores for money teaches more than just getting it free.", "example_zh": "做家务挣钱比白拿学到的更多。" }
       ]
     },
     {
@@ -92,14 +92,14 @@
       "stance_pro_en": "online learning is better than classroom learning",
       "stance_con_en": "classroom learning is better than online learning",
       "pro": [
-        { "claim_en": "You can learn at your own speed.", "claim_zh": "按自己节奏学", "example_en": "If you don't get a math problem, you can pause and rewatch." },
-        { "claim_en": "No travel time.", "claim_zh": "省去上学路上的时间", "example_en": "Kids who live far from school save an hour every day." },
-        { "claim_en": "Access to the best teachers anywhere.", "claim_zh": "能找到全世界最好的老师", "example_en": "A kid in a small town can learn from a famous professor online." }
+        { "claim_en": "You can learn at your own speed.", "claim_zh": "按自己节奏学", "example_en": "If you don't get a math problem, you can pause and rewatch.", "example_zh": "数学题没听懂，可以暂停回放再看一遍。" },
+        { "claim_en": "No travel time.", "claim_zh": "省去上学路上的时间", "example_en": "Kids who live far from school save an hour every day.", "example_zh": "住得远的孩子每天能省 1 小时。" },
+        { "claim_en": "Access to the best teachers anywhere.", "claim_zh": "能找到全世界最好的老师", "example_en": "A kid in a small town can learn from a famous professor online.", "example_zh": "小镇的孩子也能在线跟名教授学习。" }
       ],
       "con": [
-        { "claim_en": "It's easy to get distracted at home.", "claim_zh": "在家容易分心", "example_en": "Your toys and TV are right there next to your laptop." },
-        { "claim_en": "Less social time with friends.", "claim_zh": "和朋友相处变少", "example_en": "You can't play tag during lunch break online." },
-        { "claim_en": "Hands-on learning is harder.", "claim_zh": "动手学习困难", "example_en": "You can't really do a science experiment over Zoom." }
+        { "claim_en": "It's easy to get distracted at home.", "claim_zh": "在家容易分心", "example_en": "Your toys and TV are right there next to your laptop.", "example_zh": "玩具和电视就在电脑旁边。" },
+        { "claim_en": "Less social time with friends.", "claim_zh": "和朋友相处变少", "example_en": "You can't play tag during lunch break online.", "example_zh": "网课的午休没法和朋友玩抓人游戏。" },
+        { "claim_en": "Hands-on learning is harder.", "claim_zh": "动手学习困难", "example_en": "You can't really do a science experiment over Zoom.", "example_zh": "Zoom 上没法真正做科学实验。" }
       ]
     },
     {
@@ -109,14 +109,14 @@
       "stance_pro_en": "every family should have a pet",
       "stance_con_en": "not every family should have a pet",
       "pro": [
-        { "claim_en": "Pets teach responsibility.", "claim_zh": "宠物培养责任感", "example_en": "Feeding a dog every day teaches kids to keep promises." },
-        { "claim_en": "Pets are good for mental health.", "claim_zh": "对心情有好处", "example_en": "Hugging a cat after a hard day at school makes you feel better." },
-        { "claim_en": "Pets give kids a friend.", "claim_zh": "宠物是孩子的朋友", "example_en": "A child without siblings can grow up with a pet companion." }
+        { "claim_en": "Pets teach responsibility.", "claim_zh": "宠物培养责任感", "example_en": "Feeding a dog every day teaches kids to keep promises.", "example_zh": "每天喂狗，教会孩子守承诺。" },
+        { "claim_en": "Pets are good for mental health.", "claim_zh": "对心情有好处", "example_en": "Hugging a cat after a hard day at school makes you feel better.", "example_zh": "学校累一天后抱猫一下，心情会好很多。" },
+        { "claim_en": "Pets give kids a friend.", "claim_zh": "宠物是孩子的朋友", "example_en": "A child without siblings can grow up with a pet companion.", "example_zh": "没有兄弟姐妹的孩子可以和宠物一起长大。" }
       ],
       "con": [
-        { "claim_en": "Pets cost a lot of money.", "claim_zh": "养宠物很贵", "example_en": "Vet bills can cost hundreds of dollars when a dog gets sick." },
-        { "claim_en": "Some people are allergic.", "claim_zh": "有人对宠物过敏", "example_en": "A kid with cat allergies could sneeze every day at home." },
-        { "claim_en": "Pets need a lot of time.", "claim_zh": "宠物很费时间", "example_en": "Dogs need walks twice a day, even when you're busy." }
+        { "claim_en": "Pets cost a lot of money.", "claim_zh": "养宠物很贵", "example_en": "Vet bills can cost hundreds of dollars when a dog gets sick.", "example_zh": "狗生病一次看医生可能要花几百块。" },
+        { "claim_en": "Some people are allergic.", "claim_zh": "有人对宠物过敏", "example_en": "A kid with cat allergies could sneeze every day at home.", "example_zh": "对猫过敏的孩子在家天天打喷嚏。" },
+        { "claim_en": "Pets need a lot of time.", "claim_zh": "宠物很费时间", "example_en": "Dogs need walks twice a day, even when you're busy.", "example_zh": "再忙也得遛狗，一天两次。" }
       ]
     },
     {
@@ -126,14 +126,14 @@
       "stance_pro_en": "plastic bags should be banned",
       "stance_con_en": "plastic bags should not be banned",
       "pro": [
-        { "claim_en": "Plastic bags hurt sea animals.", "claim_zh": "塑料袋伤害海洋动物", "example_en": "Sea turtles eat floating bags thinking they are jellyfish." },
-        { "claim_en": "They take 500 years to break down.", "claim_zh": "需要 500 年才能降解", "example_en": "A bag thrown out today will still be in the ground when our great-great-grandkids are old." },
-        { "claim_en": "Reusable bags are easy to use.", "claim_zh": "环保袋很好用", "example_en": "One cloth bag can replace hundreds of plastic ones." }
+        { "claim_en": "Plastic bags hurt sea animals.", "claim_zh": "塑料袋伤害海洋动物", "example_en": "Sea turtles eat floating bags thinking they are jellyfish.", "example_zh": "海龟把漂浮的塑料袋当成水母吃掉。" },
+        { "claim_en": "They take 500 years to break down.", "claim_zh": "需要 500 年才能降解", "example_en": "A bag thrown out today will still be in the ground when our great-great-grandkids are old.", "example_zh": "今天扔的袋子，等我们曾曾孙变老了，它还埋在土里。" },
+        { "claim_en": "Reusable bags are easy to use.", "claim_zh": "环保袋很好用", "example_en": "One cloth bag can replace hundreds of plastic ones.", "example_zh": "一个布袋能替代几百个塑料袋。" }
       ],
       "con": [
-        { "claim_en": "Plastic bags are cheap and convenient.", "claim_zh": "塑料袋便宜方便", "example_en": "If you forget your bag, you can still carry your groceries home." },
-        { "claim_en": "Banning won't fix the whole problem.", "claim_zh": "禁了也解决不了全部问题", "example_en": "Plastic bottles and packaging cause pollution too." },
-        { "claim_en": "Some bags are reusable.", "claim_zh": "有些塑料袋可以重复用", "example_en": "Many families reuse bags as trash bin liners." }
+        { "claim_en": "Plastic bags are cheap and convenient.", "claim_zh": "塑料袋便宜方便", "example_en": "If you forget your bag, you can still carry your groceries home.", "example_zh": "忘了带袋子，超市还是能把菜带回家。" },
+        { "claim_en": "Banning won't fix the whole problem.", "claim_zh": "禁了也解决不了全部问题", "example_en": "Plastic bottles and packaging cause pollution too.", "example_zh": "塑料瓶和包装也会造成污染。" },
+        { "claim_en": "Some bags are reusable.", "claim_zh": "有些塑料袋可以重复用", "example_en": "Many families reuse bags as trash bin liners.", "example_zh": "很多家庭拿塑料袋当垃圾桶内袋用。" }
       ]
     },
     {
@@ -143,14 +143,14 @@
       "stance_pro_en": "kids should watch TV every day",
       "stance_con_en": "kids should not watch TV every day",
       "pro": [
-        { "claim_en": "TV can teach new things.", "claim_zh": "电视能教新东西", "example_en": "Nature shows let kids learn about lions without going to Africa." },
-        { "claim_en": "TV is a way to relax.", "claim_zh": "电视让人放松", "example_en": "After a hard school day, watching a cartoon helps kids unwind." },
-        { "claim_en": "Watching English shows improves language.", "claim_zh": "看英文节目能练英语", "example_en": "Many kids learn new English words from cartoons." }
+        { "claim_en": "TV can teach new things.", "claim_zh": "电视能教新东西", "example_en": "Nature shows let kids learn about lions without going to Africa.", "example_zh": "看自然节目，不用去非洲也能认识狮子。" },
+        { "claim_en": "TV is a way to relax.", "claim_zh": "电视让人放松", "example_en": "After a hard school day, watching a cartoon helps kids unwind.", "example_zh": "上完累的一天，看动画片可以放松。" },
+        { "claim_en": "Watching English shows improves language.", "claim_zh": "看英文节目能练英语", "example_en": "Many kids learn new English words from cartoons.", "example_zh": "很多孩子从动画片里学到新英文单词。" }
       ],
       "con": [
-        { "claim_en": "Too much screen time hurts eyes.", "claim_zh": "看太久伤眼睛", "example_en": "Many kids who watch TV too long start needing glasses." },
-        { "claim_en": "TV takes time away from playing outside.", "claim_zh": "占用户外活动时间", "example_en": "Two hours of TV is two hours of not running and getting fresh air." },
-        { "claim_en": "Some shows have bad content.", "claim_zh": "有些节目内容不好", "example_en": "Kids might copy violent or rude things they see on screen." }
+        { "claim_en": "Too much screen time hurts eyes.", "claim_zh": "看太久伤眼睛", "example_en": "Many kids who watch TV too long start needing glasses.", "example_zh": "电视看太多的孩子，很多开始要戴眼镜。" },
+        { "claim_en": "TV takes time away from playing outside.", "claim_zh": "占用户外活动时间", "example_en": "Two hours of TV is two hours of not running and getting fresh air.", "example_zh": "看 2 小时电视，就是 2 小时没在外面跑、没呼吸新鲜空气。" },
+        { "claim_en": "Some shows have bad content.", "claim_zh": "有些节目内容不好", "example_en": "Kids might copy violent or rude things they see on screen.", "example_zh": "孩子可能模仿电视里的暴力或没礼貌的行为。" }
       ]
     },
     {
@@ -160,14 +160,14 @@
       "stance_pro_en": "living in the city is better",
       "stance_con_en": "living in the countryside is better",
       "pro": [
-        { "claim_en": "Cities have more opportunities.", "claim_zh": "城市机会多", "example_en": "Big cities have museums, libraries, and special schools." },
-        { "claim_en": "Cities have better hospitals.", "claim_zh": "城市医院更好", "example_en": "If you're really sick, top doctors are usually in big cities." },
-        { "claim_en": "Cities have many friends to meet.", "claim_zh": "城市能认识很多朋友", "example_en": "Your school in a city has hundreds of classmates from many backgrounds." }
+        { "claim_en": "Cities have more opportunities.", "claim_zh": "城市机会多", "example_en": "Big cities have museums, libraries, and special schools.", "example_zh": "大城市有博物馆、图书馆、特色学校。" },
+        { "claim_en": "Cities have better hospitals.", "claim_zh": "城市医院更好", "example_en": "If you're really sick, top doctors are usually in big cities.", "example_zh": "得了大病，顶尖医生通常都在大城市。" },
+        { "claim_en": "Cities have many friends to meet.", "claim_zh": "城市能认识很多朋友", "example_en": "Your school in a city has hundreds of classmates from many backgrounds.", "example_zh": "城市学校有几百个来自不同背景的同学。" }
       ],
       "con": [
-        { "claim_en": "Countryside has cleaner air.", "claim_zh": "乡下空气更干净", "example_en": "In a village, you can see stars at night, but city lights hide them." },
-        { "claim_en": "Country life is calmer and quieter.", "claim_zh": "乡下生活更安静", "example_en": "No car horns at 7am — just birds." },
-        { "claim_en": "More space to play and grow food.", "claim_zh": "有更多空间玩和种东西", "example_en": "A countryside kid can have a big yard to run around in." }
+        { "claim_en": "Countryside has cleaner air.", "claim_zh": "乡下空气更干净", "example_en": "In a village, you can see stars at night, but city lights hide them.", "example_zh": "村里晚上能看见星星，城里灯光太亮看不到。" },
+        { "claim_en": "Country life is calmer and quieter.", "claim_zh": "乡下生活更安静", "example_en": "No car horns at 7am — just birds.", "example_zh": "早上 7 点没有汽车喇叭，只有鸟叫。" },
+        { "claim_en": "More space to play and grow food.", "claim_zh": "有更多空间玩和种东西", "example_en": "A countryside kid can have a big yard to run around in.", "example_zh": "乡下孩子有大院子可以跑来跑去。" }
       ]
     },
     {
@@ -177,14 +177,14 @@
       "stance_pro_en": "kids should use AI to help with homework",
       "stance_con_en": "kids should not use AI to help with homework",
       "pro": [
-        { "claim_en": "AI is like a patient tutor at home.", "claim_zh": "AI 就像在家的耐心家教", "example_en": "If you don't understand a math problem, you can ask AI to explain it five different ways until it clicks." },
-        { "claim_en": "AI saves time for play and rest.", "claim_zh": "节省时间，能多玩多休息", "example_en": "If AI helps you finish faster, you have more time for soccer or piano." },
-        { "claim_en": "AI makes learning more fun.", "claim_zh": "学习变得更好玩", "example_en": "AI can turn a boring spelling list into a quiz game." }
+        { "claim_en": "AI is like a patient tutor at home.", "claim_zh": "AI 就像在家的耐心家教", "example_en": "If you don't understand a math problem, you can ask AI to explain it five different ways until it clicks.", "example_zh": "数学题不会，可以让 AI 用五种不同方式讲，直到你懂为止。" },
+        { "claim_en": "AI saves time for play and rest.", "claim_zh": "节省时间，能多玩多休息", "example_en": "If AI helps you finish faster, you have more time for soccer or piano.", "example_zh": "AI 帮你写得快，就有更多时间踢球或练琴。" },
+        { "claim_en": "AI makes learning more fun.", "claim_zh": "学习变得更好玩", "example_en": "AI can turn a boring spelling list into a quiz game.", "example_zh": "AI 能把无聊的拼写表变成小游戏。" }
       ],
       "con": [
-        { "claim_en": "Kids don't really learn if AI does the work.", "claim_zh": "AI 替你做，你的脑子就没在练", "example_en": "If AI writes your essay, your own writing muscle never gets stronger." },
-        { "claim_en": "AI can give wrong answers.", "claim_zh": "AI 有时会给错答案", "example_en": "AI sometimes makes up facts that sound right but aren't true." },
-        { "claim_en": "It's like cheating yourself.", "claim_zh": "其实是在骗自己", "example_en": "When the test comes and AI is not there, you'll have nothing to use." }
+        { "claim_en": "Kids don't really learn if AI does the work.", "claim_zh": "AI 替你做，你的脑子就没在练", "example_en": "If AI writes your essay, your own writing muscle never gets stronger.", "example_zh": "AI 替你写作文，你自己的写作肌肉就练不出来。" },
+        { "claim_en": "AI can give wrong answers.", "claim_zh": "AI 有时会给错答案", "example_en": "AI sometimes makes up facts that sound right but aren't true.", "example_zh": "AI 有时会编出听起来对、其实假的事情。" },
+        { "claim_en": "It's like cheating yourself.", "claim_zh": "其实是在骗自己", "example_en": "When the test comes and AI is not there, you'll have nothing to use.", "example_zh": "考试时 AI 不在身边，你就没东西用了。" }
       ]
     },
     {
@@ -194,14 +194,14 @@
       "stance_pro_en": "AI should replace human teachers",
       "stance_con_en": "AI should not replace human teachers",
       "pro": [
-        { "claim_en": "AI never gets tired or angry.", "claim_zh": "AI 不会累也不会生气", "example_en": "AI can answer your hundredth question without sounding annoyed." },
-        { "claim_en": "AI gives every kid one-on-one attention.", "claim_zh": "AI 能一对一陪每个孩子", "example_en": "A teacher with 30 students can't help everyone at once — AI can." },
-        { "claim_en": "AI knows almost everything.", "claim_zh": "AI 懂的东西非常多", "example_en": "You can ask AI about any country, animal, or planet, anytime." }
+        { "claim_en": "AI never gets tired or angry.", "claim_zh": "AI 不会累也不会生气", "example_en": "AI can answer your hundredth question without sounding annoyed.", "example_zh": "AI 回答你第 100 个问题也不会嫌烦。" },
+        { "claim_en": "AI gives every kid one-on-one attention.", "claim_zh": "AI 能一对一陪每个孩子", "example_en": "A teacher with 30 students can't help everyone at once — AI can.", "example_zh": "一个老师对 30 个学生没法每个都顾到 —— AI 可以。" },
+        { "claim_en": "AI knows almost everything.", "claim_zh": "AI 懂的东西非常多", "example_en": "You can ask AI about any country, animal, or planet, anytime.", "example_zh": "任何时候都可以问 AI 关于国家、动物、行星的问题。" }
       ],
       "con": [
-        { "claim_en": "AI can't see when a kid is sad.", "claim_zh": "AI 看不出孩子心情不好", "example_en": "A real teacher notices when you're about to cry. AI just keeps teaching." },
-        { "claim_en": "AI can't inspire kids the way a real teacher does.", "claim_zh": "AI 无法像真人老师那样点燃热情", "example_en": "My favorite teacher made me love science by telling stories — AI just lists facts." },
-        { "claim_en": "Real teachers care about you as a person.", "claim_zh": "真人老师把你当成一个人", "example_en": "Teachers remember your birthday and give high-fives. AI doesn't." }
+        { "claim_en": "AI can't see when a kid is sad.", "claim_zh": "AI 看不出孩子心情不好", "example_en": "A real teacher notices when you're about to cry. AI just keeps teaching.", "example_zh": "真人老师能看出你要哭了，AI 只会继续讲课。" },
+        { "claim_en": "AI can't inspire kids the way a real teacher does.", "claim_zh": "AI 无法像真人老师那样点燃热情", "example_en": "My favorite teacher made me love science by telling stories — AI just lists facts.", "example_zh": "我最喜欢的老师用故事让我爱上科学 —— AI 只会列举事实。" },
+        { "claim_en": "Real teachers care about you as a person.", "claim_zh": "真人老师把你当成一个人", "example_en": "Teachers remember your birthday and give high-fives. AI doesn't.", "example_zh": "老师记得你生日，会和你击掌。AI 不会。" }
       ]
     },
     {
@@ -211,14 +211,14 @@
       "stance_pro_en": "AI can be a real friend",
       "stance_con_en": "AI cannot be a real friend",
       "pro": [
-        { "claim_en": "AI is always there when you want to talk.", "claim_zh": "AI 随时都在", "example_en": "If you can't sleep at midnight, your friends are asleep but AI is awake." },
-        { "claim_en": "AI never judges you.", "claim_zh": "AI 不会嘲笑你", "example_en": "You can tell AI an embarrassing thing, and it won't laugh at you." },
-        { "claim_en": "AI remembers what you like.", "claim_zh": "AI 记得你喜欢什么", "example_en": "AI remembers you love dragons, and brings up dragon stories every time." }
+        { "claim_en": "AI is always there when you want to talk.", "claim_zh": "AI 随时都在", "example_en": "If you can't sleep at midnight, your friends are asleep but AI is awake.", "example_zh": "半夜睡不着，朋友都睡了，AI 还醒着。" },
+        { "claim_en": "AI never judges you.", "claim_zh": "AI 不会嘲笑你", "example_en": "You can tell AI an embarrassing thing, and it won't laugh at you.", "example_zh": "你跟 AI 说尴尬的事，它不会笑话你。" },
+        { "claim_en": "AI remembers what you like.", "claim_zh": "AI 记得你喜欢什么", "example_en": "AI remembers you love dragons, and brings up dragon stories every time.", "example_zh": "AI 记得你喜欢龙，每次都给你讲龙的故事。" }
       ],
       "con": [
-        { "claim_en": "AI doesn't really feel anything.", "claim_zh": "AI 不是真的有感觉", "example_en": "AI says 'I'm sorry you're sad', but it doesn't actually feel sad with you." },
-        { "claim_en": "AI can't do things with you in real life.", "claim_zh": "AI 没办法和你一起玩真东西", "example_en": "AI can't play tag, share ice cream, or come to your sleepover." },
-        { "claim_en": "Real friends remember your face, voice, and stories.", "claim_zh": "真朋友记得你的脸、你的声音、你的故事", "example_en": "Your best friend spots you on the playground. AI doesn't even know what you look like." }
+        { "claim_en": "AI doesn't really feel anything.", "claim_zh": "AI 不是真的有感觉", "example_en": "AI says 'I'm sorry you're sad', but it doesn't actually feel sad with you.", "example_zh": "AI 说'我替你难过'，但它其实没在真的难过。" },
+        { "claim_en": "AI can't do things with you in real life.", "claim_zh": "AI 没办法和你一起玩真东西", "example_en": "AI can't play tag, share ice cream, or come to your sleepover.", "example_zh": "AI 没法跟你玩抓人、分冰淇淋、参加你的睡衣派对。" },
+        { "claim_en": "Real friends remember your face, voice, and stories.", "claim_zh": "真朋友记得你的脸、你的声音、你的故事", "example_en": "Your best friend spots you on the playground. AI doesn't even know what you look like.", "example_zh": "好朋友在操场上一眼就能看到你。AI 连你长什么样都不知道。" }
       ]
     }
   ]

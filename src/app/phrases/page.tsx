@@ -90,9 +90,10 @@ function ReadMode({ phrases }: { phrases: Phrase[] }) {
               {p.english}
             </p>
             <p className="text-[var(--color-ink-soft)] mb-2">{p.chinese}</p>
-            <p className="text-xs text-[var(--color-ink-soft)] italic border-l-2 border-[var(--color-courage-gold)]/40 pl-3">
-              💡 {p.scenario_zh}
-            </p>
+            <div className="text-xs italic border-l-2 border-[var(--color-courage-gold)]/40 pl-3">
+              <p className="text-[var(--color-ink)]">💡 {p.scenario_en}</p>
+              <p className="text-[var(--color-ink-soft)]">{p.scenario_zh}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -163,29 +164,57 @@ function QuizMode({ phrases }: { phrases: Phrase[] }) {
     const pct = Math.round((score / questions.length) * 100);
     const grade =
       pct === 100
-        ? { emoji: "🏆", label: "Legendary!", msg: "Every phrase locked in. You're battle-ready!" }
+        ? {
+            emoji: "🏆",
+            label_en: "Legendary!",
+            label_zh: "传奇水准！",
+            msg_en: "Every phrase locked in. You're battle-ready!",
+            msg_zh: "10 句全对，你已经准备上场了！",
+          }
         : pct >= 80
-        ? { emoji: "⚡", label: "Excellent!", msg: "Almost perfect — review the missed ones once and you've got it." }
+        ? {
+            emoji: "⚡",
+            label_en: "Excellent!",
+            label_zh: "非常棒！",
+            msg_en: "Almost perfect — review the missed ones once and you've got it.",
+            msg_zh: "差一点满分 — 把错的几句复习一遍就稳了。",
+          }
         : pct >= 60
-        ? { emoji: "🛡", label: "Good Effort", msg: "Keep practicing — another round and you'll be a master." }
-        : { emoji: "📜", label: "Keep Going", msg: "Switch to 📖 Read mode, then come back. You'll see big jumps." };
+        ? {
+            emoji: "🛡",
+            label_en: "Good Effort",
+            label_zh: "不错的尝试",
+            msg_en: "Keep practicing — another round and you'll be a master.",
+            msg_zh: "继续练 — 再来一轮就能上手。",
+          }
+        : {
+            emoji: "📜",
+            label_en: "Keep Going",
+            label_zh: "再加把劲",
+            msg_en: "Switch to 📖 Read mode, then come back. You'll see big jumps.",
+            msg_zh: "先切回📖背诵模式过一遍，再来 Quiz，会进步很大。",
+          };
     return (
       <div className="scroll-card p-8 text-center">
         <p className="text-6xl mb-2">{grade.emoji}</p>
-        <h3 className="text-3xl font-display text-[var(--color-ink)] mb-2">{grade.label}</h3>
-        <p className="text-[var(--color-ink-soft)] mb-6">{grade.msg}</p>
+        <h3 className="text-3xl font-display text-[var(--color-ink)] mb-1">
+          {grade.label_en}
+        </h3>
+        <p className="text-base text-[var(--color-ink-soft)] mb-3">{grade.label_zh}</p>
+        <p className="text-[var(--color-ink)] mb-1">{grade.msg_en}</p>
+        <p className="text-[var(--color-ink-soft)] text-sm mb-6">{grade.msg_zh}</p>
         <div className="grid grid-cols-2 gap-4 max-w-md mx-auto mb-6">
           <div className="border border-[var(--color-courage-gold)]/40 rounded p-4">
-            <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
-              Score
+            <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-0.5">
+              Score · 得分
             </p>
             <p className="text-3xl font-display text-[var(--color-courage-gold)]">
               {score} / {questions.length}
             </p>
           </div>
           <div className="border border-[var(--color-courage-gold)]/40 rounded p-4">
-            <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
-              🔥 Best Streak
+            <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-0.5">
+              🔥 Best Streak · 最长连击
             </p>
             <p className="text-3xl font-display text-[var(--color-courage-gold)]">{bestStreak}</p>
           </div>

@@ -6,6 +6,7 @@
       "name_zh": "绝对化",
       "icon": "infinity",
       "signals": ["always", "never", "everyone", "no one", "all", "every", "nobody"],
+      "description_en": "The opponent uses absolute words — finding one counter-example is enough to break them.",
       "description_zh": "对手用绝对词，只要找到一个反例就破。",
       "counter_en": "That's not always true. For example, ___.",
       "counter_zh": "这并不总是对的。比如___。"
@@ -15,7 +16,8 @@
       "name_en": "No Example",
       "name_zh": "没给例子",
       "icon": "search",
-      "signals": ["讲了一堆道理但没具体例子"],
+      "signals": ["lots of claims but no concrete example"],
+      "description_en": "Lots of claims but zero specific examples — call it out directly.",
       "description_zh": "对手只有结论没有例子，直接质疑。",
       "counter_en": "Can my opponent give a real example?",
       "counter_zh": "请问对手能举一个真实的例子吗？"
@@ -26,6 +28,7 @@
       "name_zh": "人身攻击",
       "icon": "shield",
       "signals": ["you don't know", "you're just a kid", "you're wrong because of who you are"],
+      "description_en": "The opponent attacks you personally instead of your argument.",
       "description_zh": "对手攻击你这个人而不是你的论点。",
       "counter_en": "Let's focus on the topic, not on the person.",
       "counter_zh": "我们应该关注辩题，不是个人。"
@@ -36,6 +39,7 @@
       "name_zh": "混淆因果",
       "icon": "compass",
       "signals": ["X happens, so Y must be the cause"],
+      "description_en": "The opponent treats a result as if it were the cause — a leap in logic.",
       "description_zh": "对手把结果当成原因，跳跃推理。",
       "counter_en": "That's a result, not a reason.",
       "counter_zh": "那是结果，不是原因。"
@@ -45,7 +49,8 @@
       "name_en": "Off Topic",
       "name_zh": "偷换话题",
       "icon": "compass-off",
-      "signals": ["扯到无关的事"],
+      "signals": ["answers something unrelated"],
+      "description_en": "The opponent dodges to an unrelated topic.",
       "description_zh": "对手答非所问，扯到无关话题。",
       "counter_en": "That's a different topic. Let's go back to ___.",
       "counter_zh": "那是另一个话题。让我们回到___。"
@@ -56,150 +61,175 @@
       "id": "q1",
       "opponent_says": "Everyone knows homework is bad. No kid likes doing homework.",
       "correct_pattern": "absolute",
+      "explanation_en": "Used 'Everyone' and 'No kid' — absolute words. Just name one kid who likes homework.",
       "explanation_zh": "用了 'Everyone' 和 'No kid'，绝对化。可以举一个喜欢做作业的孩子作反例。"
     },
     {
       "id": "q2",
       "opponent_says": "Phones in school always cause problems. They never help.",
       "correct_pattern": "absolute",
+      "explanation_en": "Both 'always' and 'never' are absolute words. Give one example of a phone helping learning.",
       "explanation_zh": "'always' 和 'never' 都是绝对词。可以举一个手机帮助学习的例子。"
     },
     {
       "id": "q3",
       "opponent_says": "School uniforms are bad because they look ugly and limit freedom and stop creativity.",
       "correct_pattern": "no-example",
+      "explanation_en": "Three big claims, zero concrete examples.",
       "explanation_zh": "讲了三个结论，但没有给任何具体例子。"
     },
     {
       "id": "q4",
       "opponent_says": "You're only nine years old. You don't understand how the world works.",
       "correct_pattern": "personal-attack",
+      "explanation_en": "Attacking your age, not discussing the actual motion.",
       "explanation_zh": "对手攻击你的年龄，没讨论辩题本身。"
     },
     {
       "id": "q5",
       "opponent_says": "Many kids hate homework. So homework must be making them unhappy.",
       "correct_pattern": "cause-effect",
+      "explanation_en": "Treats 'kids hate it' as the cause of 'homework makes them sad'. Maybe homework is too hard — that's the real cause.",
       "explanation_zh": "把'孩子不喜欢'当成'作业让他们不开心'的原因。也许是因为作业太难，不是作业本身。"
     },
     {
       "id": "q6",
       "opponent_says": "We're talking about pets in school, but actually let me tell you about my summer vacation.",
       "correct_pattern": "off-topic",
+      "explanation_en": "Clearly went off topic.",
       "explanation_zh": "明显跑题了。"
     },
     {
       "id": "q7",
       "opponent_says": "All zoos are cruel. Every animal in a zoo is suffering.",
       "correct_pattern": "absolute",
+      "explanation_en": "'All' and 'every' are absolute words.",
       "explanation_zh": "'All' 和 'every' 是绝对词。"
     },
     {
       "id": "q8",
       "opponent_says": "Pocket money is good. It helps kids. It teaches them things.",
       "correct_pattern": "no-example",
+      "explanation_en": "Many conclusions but zero concrete examples.",
       "explanation_zh": "结论很多但没有任何具体例子。"
     },
     {
       "id": "q9",
       "opponent_says": "Online learning is better. Just look — it exists, doesn't it?",
       "correct_pattern": "off-topic",
+      "explanation_en": "Doesn't actually answer 'why is it better' — skipped the argument entirely.",
       "explanation_zh": "没有真正回答 \"为什么更好\"，跳过了论证。"
     },
     {
       "id": "q10",
       "opponent_says": "Plastic bags are everywhere on beaches. So plastic bags must be the only reason for ocean pollution.",
       "correct_pattern": "cause-effect",
+      "explanation_en": "Sees an effect (bags on beaches) and infers it's the only cause. Ocean pollution has many causes.",
       "explanation_zh": "看到结果（海滩有塑料袋）就推断成唯一原因。其实海洋污染原因很多。"
     },
     {
       "id": "q11",
       "opponent_says": "You're a kid, you don't understand school policy.",
       "correct_pattern": "personal-attack",
+      "explanation_en": "Attacks you for being a kid instead of discussing the policy.",
       "explanation_zh": "攻击你是孩子，没讨论政策本身。"
     },
     {
       "id": "q12",
       "opponent_says": "TV is bad for everyone. No one benefits from it.",
       "correct_pattern": "absolute",
+      "explanation_en": "'everyone' and 'no one' are absolute words. Mention a science show that teaches kids.",
       "explanation_zh": "'everyone' 和 'no one' 是绝对词。可举科普节目帮助学习的例子。"
     },
     {
       "id": "q13",
       "opponent_says": "Country life is better. The air is fresh and people are nice.",
       "correct_pattern": "no-example",
+      "explanation_en": "Talks about air and people, but no specifics (where, who, what happened).",
       "explanation_zh": "讲了空气和人，但没具体例子（哪里、谁、什么事）。"
     },
     {
       "id": "q14",
       "opponent_says": "Phones distract students. So banning phones will make kids learn more.",
       "correct_pattern": "cause-effect",
+      "explanation_en": "Assumes phones are the only cause of bad learning. There are many reasons kids struggle.",
       "explanation_zh": "假设手机分散注意力是学习不好的唯一原因，但学习不好原因很多。"
     },
     {
       "id": "q15",
       "opponent_says": "I think kids should have homework, but speaking of which, what's your favorite cartoon?",
       "correct_pattern": "off-topic",
+      "explanation_en": "Classic topic switch.",
       "explanation_zh": "典型偷换话题。"
     },
     {
       "id": "q16",
       "opponent_says": "Everyone in our class wants school uniforms.",
       "correct_pattern": "absolute",
+      "explanation_en": "'Everyone' is an absolute word. One classmate who doesn't want uniforms breaks it.",
       "explanation_zh": "'Everyone' 是绝对词。一个不想穿的同学就能反驳。"
     },
     {
       "id": "q17",
       "opponent_says": "Pets are good for families. They make life better. Trust me.",
       "correct_pattern": "no-example",
+      "explanation_en": "No examples, no reasoning at all.",
       "explanation_zh": "完全没有例子和理由。"
     },
     {
       "id": "q18",
       "opponent_says": "You can't argue with me, you're just a third grader.",
       "correct_pattern": "personal-attack",
+      "explanation_en": "Attacks your grade level instead of discussing the motion.",
       "explanation_zh": "攻击年级，不讨论辩题。"
     },
     {
       "id": "q19",
       "opponent_says": "Many people throw away plastic bags. So plastic bags are the cause of all environmental problems.",
       "correct_pattern": "cause-effect",
+      "explanation_en": "Sees one phenomenon and jumps to an exaggerated cause.",
       "explanation_zh": "看到现象就推一个夸大的因果结论。"
     },
     {
       "id": "q20",
       "opponent_says": "We're debating homework, but did you know my dog can do tricks?",
       "correct_pattern": "off-topic",
+      "explanation_en": "Off topic.",
       "explanation_zh": "跑题。"
     },
     {
       "id": "q21",
       "opponent_says": "All online classes are boring. Every kid hates them.",
       "correct_pattern": "absolute",
+      "explanation_en": "'All' and 'Every' — absolute words.",
       "explanation_zh": "'All' 和 'Every'，绝对化。"
     },
     {
       "id": "q22",
       "opponent_says": "Pocket money is bad because it spoils kids and creates problems.",
       "correct_pattern": "no-example",
+      "explanation_en": "Zero concrete examples — all vague claims.",
       "explanation_zh": "没有任何具体例子，全是空泛的结论。"
     },
     {
       "id": "q23",
       "opponent_says": "You're a child, you can't understand money matters.",
       "correct_pattern": "personal-attack",
+      "explanation_en": "Attacks you for being a child.",
       "explanation_zh": "攻击你是孩子。"
     },
     {
       "id": "q24",
       "opponent_says": "Some students fail tests. So tests must be the reason students hate school.",
       "correct_pattern": "cause-effect",
+      "explanation_en": "Failing tests → hating school: treats an effect as the cause. A logical leap.",
       "explanation_zh": "考试失败 → 讨厌学校：把结果当原因。"
     },
     {
       "id": "q25",
       "opponent_says": "Let's discuss the school uniform debate. Anyway, I had pizza for lunch yesterday.",
       "correct_pattern": "off-topic",
+      "explanation_en": "Clearly off topic.",
       "explanation_zh": "明显跑题。"
     }
   ]

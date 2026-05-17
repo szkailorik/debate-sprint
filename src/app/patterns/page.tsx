@@ -166,18 +166,21 @@ export default function PatternsPage() {
                 }}
               >
                 {isCorrect
-                  ? `✓ Sharp eye! ⚡${streak >= 3 ? ` ${streak} in a row!` : ""}`
-                  : "✗ Not quite"}
+                  ? `✓ Sharp eye! ⚡ 眼力好！${streak >= 3 ? ` ${streak} in a row · 连击 ${streak}！` : ""}`
+                  : "✗ Not quite · 差一点"}
               </p>
               <p className="text-sm text-[var(--color-ink-soft)] mb-2">
-                Correct answer:{" "}
+                Correct answer · 正确答案:{" "}
                 <strong className="text-[var(--color-ink)]">
                   {correctPattern.name_en} · {correctPattern.name_zh}
                 </strong>
               </p>
-              <p className="text-sm text-[var(--color-ink-soft)] border-l-2 border-[var(--color-courage-gold)]/40 pl-3">
-                {q.explanation_zh}
-              </p>
+              <div className="text-sm border-l-2 border-[var(--color-courage-gold)]/40 pl-3">
+                <p className="text-[var(--color-ink)]">{q.explanation_en}</p>
+                <p className="text-[var(--color-ink-soft)] text-xs mt-0.5">
+                  {q.explanation_zh}
+                </p>
+              </div>
             </div>
 
             <div className="scroll-card p-5 mb-6">
@@ -225,7 +228,10 @@ export default function PatternsPage() {
                 <p className="font-display text-[var(--color-courage-gold)]">
                   {p.name_en} · {p.name_zh}
                 </p>
-                <p className="text-[var(--color-ink-soft)]">{p.description_zh}</p>
+                <p className="text-[var(--color-ink)]">{p.description_en}</p>
+                <p className="text-[var(--color-ink-soft)] text-xs">
+                  {p.description_zh}
+                </p>
                 <div className="flex items-center gap-2 mt-1">
                   <p className="text-[var(--color-ink)]">→ {p.counter_en}</p>
                   <Speaker text={p.counter_en} size="sm" />
@@ -257,35 +263,61 @@ function EndSummary({
   const pct = Math.round((score / total) * 100);
   const grade =
     pct >= 90
-      ? { emoji: "🏆", label: "Sheikah Master!", msg: "All 5 patterns owned. Bring on the debate." }
+      ? {
+          emoji: "🏆",
+          label_en: "Sheikah Master!",
+          label_zh: "希卡高手！",
+          msg_en: "All 5 patterns owned. Bring on the debate.",
+          msg_zh: "5 种套路你都拿下了。比赛放马过来。",
+        }
       : pct >= 75
-      ? { emoji: "⚔", label: "Battle Ready", msg: "You can spot most tricks. Review the weak pattern below and you're set." }
+      ? {
+          emoji: "⚔",
+          label_en: "Battle Ready",
+          label_zh: "可以上场了",
+          msg_en: "You can spot most tricks. Review the weak pattern below and you're set.",
+          msg_zh: "大部分套路你都看得出来。看看下面哪招还弱，复习一下就稳。",
+        }
       : pct >= 60
-      ? { emoji: "🛡", label: "Solid Progress", msg: "Halfway there. Run it once more — accuracy jumps fast." }
-      : { emoji: "📜", label: "Keep Training", msg: "Check the 5-pattern cheat sheet, then come back. Every kid gets there." };
+      ? {
+          emoji: "🛡",
+          label_en: "Solid Progress",
+          label_zh: "进步明显",
+          msg_en: "Halfway there. Run it once more — accuracy jumps fast.",
+          msg_zh: "已经一半了。再来一轮，正确率会跳一截。",
+        }
+      : {
+          emoji: "📜",
+          label_en: "Keep Training",
+          label_zh: "继续训练",
+          msg_en: "Check the 5-pattern cheat sheet, then come back. Every kid gets there.",
+          msg_zh: "看看下面的 5 招速查表，再回来。每个小孩都能学会。",
+        };
 
   return (
     <div className="scroll-card p-8">
       <div className="text-center mb-6">
         <p className="text-6xl mb-2">{grade.emoji}</p>
         <h3 className="text-3xl font-display text-[var(--color-ink)] mb-1">
-          {grade.label}
+          {grade.label_en}
         </h3>
-        <p className="text-[var(--color-ink-soft)]">{grade.msg}</p>
+        <p className="text-base text-[var(--color-ink-soft)] mb-3">{grade.label_zh}</p>
+        <p className="text-[var(--color-ink)] mb-1">{grade.msg_en}</p>
+        <p className="text-[var(--color-ink-soft)] text-sm">{grade.msg_zh}</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 max-w-md mx-auto mb-6">
         <div className="border border-[var(--color-courage-gold)]/40 rounded p-4 text-center">
-          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
-            Final Score
+          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-0.5">
+            Final Score · 总分
           </p>
           <p className="text-3xl font-display text-[var(--color-courage-gold)]">
             {score} / {total}
           </p>
         </div>
         <div className="border border-[var(--color-courage-gold)]/40 rounded p-4 text-center">
-          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-1">
-            🔥 Best Streak
+          <p className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase mb-0.5">
+            🔥 Best Streak · 最长连击
           </p>
           <p className="text-3xl font-display text-[var(--color-courage-gold)]">
             {bestStreak}
@@ -326,7 +358,7 @@ function EndSummary({
                     </span>
                     {mastered && (
                       <span className="ml-2 text-xs text-[var(--color-link-green)]">
-                        Mastered!
+                        Mastered · 精通
                       </span>
                     )}
                   </>

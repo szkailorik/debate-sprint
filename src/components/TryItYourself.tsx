@@ -92,8 +92,12 @@ export function TryItYourself() {
         ⚔ TRY IT YOURSELF · 你来试一次
       </p>
       <h2 className="text-2xl font-display text-[var(--color-ink)] mb-1">
-        Practice on a Real Topic
+        Practice on a Real Topic · 拿真辩题练
       </h2>
+      <p className="text-sm text-[var(--color-ink)] mb-1">
+        Pick a topic → fill in 4 lines → reveal the expert version to compare.
+        In 3 minutes you can PREP any topic.
+      </p>
       <p className="text-sm text-[var(--color-ink-soft)] mb-5">
         挑一个辩题 → 自己填 4 行 → 再看专家版本对比。3 分钟你就能 PREP 任何题目。
       </p>
@@ -101,7 +105,7 @@ export function TryItYourself() {
       {/* Topic + Stance */}
       <div className="flex flex-wrap gap-3 mb-6 items-center">
         <label className="text-xs tracking-wider text-[var(--color-ink-soft)] uppercase">
-          Topic:
+          Topic · 辩题:
         </label>
         <select
           value={topicId}
@@ -140,7 +144,7 @@ export function TryItYourself() {
 
       {/* Your stance preview */}
       <div className="mb-4 p-3 bg-[var(--color-parchment-light)] border border-[var(--color-courage-gold)]/30 rounded text-sm">
-        <span className="text-[var(--color-ink-soft)]">Your stance: </span>
+        <span className="text-[var(--color-ink-soft)]">Your stance · 你的立场: </span>
         <span className="text-[var(--color-ink)] font-medium">{stanceStmt}.</span>
       </div>
 
@@ -179,11 +183,11 @@ export function TryItYourself() {
       {/* Action buttons */}
       <div className="flex flex-wrap gap-3 mb-5">
         <button onClick={cycleSample} className="sheikah-button">
-          🔮 {sample === null ? "Show me a sample" : "Try another reason"}
+          🔮 {sample === null ? "Show me a sample · 看专家版" : "Another reason · 换一个理由"}
         </button>
         {(sample || userInputs.p1 || userInputs.r || userInputs.e || userInputs.p2) && (
           <button onClick={reset} className="gold-button">
-            ↻ Reset
+            ↻ Reset · 重来
           </button>
         )}
       </div>
