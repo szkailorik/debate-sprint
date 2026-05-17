@@ -80,7 +80,8 @@ export function SpeechTimer() {
 
   return (
     <section
-      className="scroll-card p-6 md:p-8 mb-8"
+      id="mock-speech"
+      className="scroll-card p-6 md:p-8 mb-8 scroll-mt-20"
       style={{ borderColor: "var(--color-courage-gold-bright)" }}
     >
       <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">

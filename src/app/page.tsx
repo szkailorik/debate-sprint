@@ -16,6 +16,13 @@ import {
 
 const modules = [
   {
+    title: "Battle Plan",
+    subtitle: "From Motion to Mic",
+    subtitle_zh: "战前 7 步 · 拿到题目照做",
+    href: "/battle-plan",
+    icon: <span className="text-5xl">📋</span>,
+  },
+  {
     title: "PREP Structure",
     subtitle: "The Scroll of Courage",
     subtitle_zh: "勇气之卷 · 3 分钟会 PREP",
@@ -74,34 +81,52 @@ export default function Home() {
 
         <ProgressStats />
 
-        {/* FIRST TIME? section — the one obvious next step for a nervous new debater. */}
-        <section
-          className="scroll-card p-6 md:p-8 mb-10"
-          style={{ borderColor: "var(--color-sheikah)" }}
-        >
-          <div className="flex flex-col md:flex-row md:items-center gap-6">
-            <div className="flex-1">
-              <p className="text-xs tracking-[0.3em] text-[var(--color-sheikah)] mb-2">
-                ⚔ FIRST TIME? START HERE
-              </p>
-              <h2 className="text-2xl md:text-3xl font-display text-[var(--color-ink)] mb-2">
-                3 分钟先学会 PREP
-              </h2>
-              <p className="text-[var(--color-ink-soft)] text-sm mb-1">
-                PREP 是辩论里最重要的一招。学会它，任何题目你都能说话。
-              </p>
-              <p className="text-[var(--color-ink-soft)] text-sm">
-                💡 先看模板 → 选一个辩题 → 自己填一遍 → 对比专家版。一次就懂。
-              </p>
-            </div>
+        {/* Two primary entry points — addresses the two states a kid arrives in. */}
+        <div className="grid md:grid-cols-2 gap-4 mb-10">
+          {/* Brand new — needs to learn the basics. */}
+          <section
+            className="scroll-card p-6"
+            style={{ borderColor: "var(--color-sheikah)" }}
+          >
+            <p className="text-xs tracking-[0.3em] text-[var(--color-sheikah)] mb-2">
+              ⚔ NEW TO DEBATE?
+            </p>
+            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-2">
+              先学会 PREP
+            </h2>
+            <p className="text-[var(--color-ink-soft)] text-sm mb-4">
+              PREP 是辩论的骨架。3 分钟学会，任何题目你都能开口。
+            </p>
             <Link
               href="/structure"
-              className="sheikah-button text-base whitespace-nowrap"
+              className="sheikah-button text-sm whitespace-nowrap"
             >
-              ▶ Begin Trial
+              ▶ Learn PREP
             </Link>
-          </div>
-        </section>
+          </section>
+
+          {/* Already has a motion — follow the prep workflow. */}
+          <section
+            className="scroll-card p-6"
+            style={{ borderColor: "var(--color-courage-gold-bright)" }}
+          >
+            <p className="text-xs tracking-[0.3em] text-[var(--color-courage-gold)] mb-2">
+              📋 GOT YOUR MOTION?
+            </p>
+            <h2 className="text-xl md:text-2xl font-display text-[var(--color-ink)] mb-2">
+              战前 7 步备战
+            </h2>
+            <p className="text-[var(--color-ink-soft)] text-sm mb-4">
+              抽到辩题以后照清单做：理解 → 论点 → 例子 → 写稿 → 反击 → 练习 → 临场。
+            </p>
+            <Link
+              href="/battle-plan"
+              className="gold-button text-sm whitespace-nowrap"
+            >
+              ▶ Open Plan
+            </Link>
+          </section>
+        </div>
 
         <p className="text-center text-sm text-[var(--color-ink-soft)] mb-4">
           Or pick any trial · 也可以直接挑一招练

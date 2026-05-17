@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const NAV = [
+  { href: "/battle-plan", label: "Plan" },
   { href: "/structure", label: "Scroll" },
   { href: "/phrases", label: "Phrases" },
   { href: "/patterns", label: "Foe" },
