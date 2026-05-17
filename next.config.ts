@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-const repo = "debate-sprint";
-
+// Custom domain debate.kailorik.com is served from the project root, so basePath
+// is empty. The old https://szkailorik.github.io/debate-sprint/ URL keeps
+// working — GitHub auto-redirects it to the custom domain.
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? `/${repo}` : "",
-  assetPrefix: isProd ? `/${repo}/` : "",
   trailingSlash: true,
   images: { unoptimized: true },
 };
