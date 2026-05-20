@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
 
-// Custom domain debate.kailorik.com is served from the project root, so basePath
-// is empty. The old https://szkailorik.github.io/debate-sprint/ URL keeps
-// working — GitHub auto-redirects it to the custom domain.
+// Served from https://szkailorik.github.io/debate-sprint/ via GitHub Pages.
+// Custom domain debate.kailorik.com is parked until the Cloudflare DNS is
+// repointed away from debate-sprint.pages.dev to szkailorik.github.io.
+const isProd = process.env.NODE_ENV === "production";
+const repo = "debate-sprint";
+
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: isProd ? `/${repo}` : "",
+  assetPrefix: isProd ? `/${repo}/` : "",
   trailingSlash: true,
   images: { unoptimized: true },
 };
