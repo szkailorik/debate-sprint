@@ -1,15 +1,11 @@
 import type { NextConfig } from "next";
 
-// Served from https://szkailorik.github.io/debate-sprint/ via GitHub Pages.
-// Custom domain debate.kailorik.com is parked until the Cloudflare DNS is
-// repointed away from debate-sprint.pages.dev to szkailorik.github.io.
-const isProd = process.env.NODE_ENV === "production";
-const repo = "debate-sprint";
-
+// Deployed to Cloudflare Pages → debate-sprint.pages.dev + debate.kailorik.com.
+// Both serve from "/", so no basePath. (GitHub Pages URL is no longer the
+// primary; that deploy still runs but the URL won't fully work without
+// basePath — acceptable since CF Pages is canonical now.)
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? `/${repo}` : "",
-  assetPrefix: isProd ? `/${repo}/` : "",
   trailingSlash: true,
   images: { unoptimized: true },
 };
