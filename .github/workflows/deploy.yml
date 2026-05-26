@@ -30,6 +30,10 @@ jobs:
       - run: npm run build
         env:
           NODE_ENV: production
+          # GitHub Pages serves at szkailorik.github.io/debate-sprint/, so
+          # assets need this prefix. Cloudflare Pages does NOT set this var,
+          # so its build keeps basePath empty.
+          NEXT_PUBLIC_BASE_PATH: /debate-sprint
 
       - run: touch out/.nojekyll
 
