@@ -65,9 +65,9 @@ const STEPS: Step[] = [
       "Three-point structure (First / Second / Finally) is the skeleton of a debate speech.",
     why_zh: "三点结构（First / Second / Finally）是辩论的骨架。",
     cta: {
-      href: "/topics",
-      label_en: "→ Open Armory for inspiration (13 motions)",
-      label_zh: "→ 去武器库借灵感（13 个辩题做参考）",
+      href: "/predictions",
+      label_en: "→ Browse Top 50 predicted motions for ideas",
+      label_zh: "→ 翻押题 50 找灵感（50 个预测辩题）",
     },
   },
   {

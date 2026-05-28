@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "title_en": "Top 50 Predicted Motions",
+    "title_zh": "押题 50",
+    "note_en": "Likely motions for junior English debate in China (NSDA Junior / NHSDLC Junior style): life-oriented, beginner-friendly. Scan fast, grab the points you like.",
+    "note_zh": "根据中国小学英文辩论赛（NSDA Junior / NHSDLC Junior 风格）预测：生活化、适合初级选手。快速浏览，挑你喜欢的点记下来。"
+  },
+  "categories": [
+    { "id": "school", "name_en": "School & Learning", "name_zh": "学校与学习", "emoji": "🎒" },
+    { "id": "tech", "name_en": "Technology & AI", "name_zh": "科技与 AI", "emoji": "🤖" },
+    { "id": "planet", "name_en": "Environment & Animals", "name_zh": "环境与动物", "emoji": "🌍" },
+    { "id": "family", "name_en": "Family & Society", "name_zh": "家庭与社会", "emoji": "🏠" },
+    { "id": "health", "name_en": "Health & Food", "name_zh": "健康与饮食", "emoji": "🥗" },
+    { "id": "fun", "name_en": "Fun & Entertainment", "name_zh": "娱乐", "emoji": "🎮" },
+    { "id": "values", "name_en": "Values & Big Questions", "name_zh": "价值观与大问题", "emoji": "💡" }
+  ],
+  "topics": [
+    {
+      "id": "exams",
+      "category": "school",
+      "title_en": "Should exams be banned?",
+      "title_zh": "应该取消考试吗？",
+      "pro": [
+        { "en": "Exams make kids so stressed they can't sleep.", "zh": "考试压力大到睡不着觉。" },
+        { "en": "Real learning is more than memorizing for a test.", "zh": "真正的学习不只是背书应付考试。" },
+        { "en": "One bad day shouldn't decide your whole grade.", "zh": "一次发挥不好，不该决定全部成绩。" }
+      ],
+      "con": [
+        { "en": "Exams show what you have really learned.", "zh": "考试能看出你是不是真学会了。" },
+        { "en": "They prepare you for bigger tests later in life.", "zh": "为以后更大的考试打基础。" },
+        { "en": "A goal to study for keeps you focused.", "zh": "有考试这个目标，学习才有动力。" }
+      ]
+    },
+    {
+      "id": "grade-teachers",
+      "category": "school",
+      "title_en": "Should students grade their teachers?",
+      "title_zh": "学生应该给老师打分吗？",
+      "pro": [
+        { "en": "Teachers can learn what helps kids most.", "zh": "老师能知道哪种教法对学生最有用。" },
+        { "en": "Students know which lessons are boring.", "zh": "学生最清楚哪节课无聊。" },
+        { "en": "It makes school feel fair for everyone.", "zh": "让学校对每个人都更公平。" }
+      ],
+      "con": [
+        { "en": "Kids might give low scores just for fun homework.", "zh": "孩子可能只因为作业少就打高分。" },
+        { "en": "Teachers could feel scared to be strict.", "zh": "老师会不敢严格要求。" },
+        { "en": "A strict teacher is sometimes the best teacher.", "zh": "严格的老师有时才是最好的老师。" }
+      ]
+    },
+    {
+      "id": "longer-recess",
+      "category": "school",
+      "title_en": "Should recess be longer?",
+      "title_zh": "课间休息应该更长吗？",
+      "pro": [
+        { "en": "Kids think better after running around.", "zh": "跑跑跳跳后脑子更清醒。" },
+        { "en": "Playtime teaches teamwork and making friends.", "zh": "玩耍能学会团队合作和交朋友。" },
+        { "en": "Sitting too long is bad for your body.", "zh": "坐太久对身体不好。" }
+      ],
+      "con": [
+        { "en": "Less class time means learning less.", "zh": "上课时间变少，学的东西也少。" },
+        { "en": "Some kids get hurt during long breaks.", "zh": "休息太久，有些孩子会受伤。" },
+        { "en": "It's hard to calm down after too much play.", "zh": "玩太久后很难安静下来上课。" }
+      ]
+    },
+    {
+      "id": "learn-coding",
+      "category": "school",
+      "title_en": "Should kids learn to code at school?",
+      "title_zh": "小学应该教编程吗？",
+      "pro": [
+        { "en": "Computers are part of almost every job today.", "zh": "现在几乎每个工作都要用电脑。" },
+        { "en": "Coding teaches you to solve problems step by step.", "zh": "编程教你一步步解决问题。" },
+        { "en": "Kids can build their own games and apps.", "zh": "孩子能自己做游戏和 App。" }
+      ],
+      "con": [
+        { "en": "Young kids should learn reading and math first.", "zh": "小孩应该先学好阅读和数学。" },
+        { "en": "Too much screen time hurts the eyes.", "zh": "对着屏幕太久伤眼睛。" },
+        { "en": "Not every kid will work with computers.", "zh": "不是每个孩子以后都用电脑工作。" }
+      ]
+    },
+    {
+      "id": "reading-not-homework",
+      "category": "school",
+      "title_en": "Should homework be replaced by daily reading?",
+      "title_zh": "作业应该用每天阅读来代替吗？",
+      "pro": [
+        { "en": "Reading makes you smarter in every subject.", "zh": "阅读让你各科都变聪明。" },
+        { "en": "Kids enjoy reading more than worksheets.", "zh": "孩子喜欢读书多过做练习卷。" },
+        { "en": "Good readers write and speak better too.", "zh": "爱读书的孩子写作和说话也更好。" }
+      ],
+      "con": [
+        { "en": "Math needs practice, not just reading.", "zh": "数学需要练习，光读书不够。" },
+        { "en": "Some kids would read the same easy book again.", "zh": "有些孩子会一直读同一本简单的书。" },
+        { "en": "Homework teaches you to finish a task on time.", "zh": "作业教你按时完成任务。" }
+      ]
+    },
+    {
+      "id": "choose-subjects",
+      "category": "school",
+      "title_en": "Should students choose their own subjects?",
+      "title_zh": "学生应该自己选课吗？",
+      "pro": [
+        { "en": "Kids learn faster when they like the subject.", "zh": "学喜欢的科目学得更快。" },
+        { "en": "Everyone is good at different things.", "zh": "每个人擅长的东西不一样。" },
+        { "en": "Choosing makes kids feel grown-up and responsible.", "zh": "自己选课让孩子更有责任感。" }
+      ],
+      "con": [
+        { "en": "Kids might drop subjects they actually need.", "zh": "孩子可能放掉真正需要的科目。" },
+        { "en": "You can't know you like something you never tried.", "zh": "没试过的东西，怎么知道喜不喜欢。" },
+        { "en": "A wide base helps you in the future.", "zh": "学得广，将来路才宽。" }
+      ]
+    },
+    {
+      "id": "start-later",
+      "category": "school",
+      "title_en": "Should school start later in the morning?",
+      "title_zh": "学校应该晚一点上课吗？",
+      "pro": [
+        { "en": "Kids who sleep more learn better.", "zh": "睡够的孩子学得更好。" },
+        { "en": "Many students fall asleep in early classes.", "zh": "很多学生第一节课就打瞌睡。" },
+        { "en": "A calm morning means a happier day.", "zh": "早上不慌张，一整天心情好。" }
+      ],
+      "con": [
+        { "en": "Parents need to leave for work early.", "zh": "爸妈要早早去上班。" },
+        { "en": "Later school means later dinner and bedtime.", "zh": "上学晚，吃饭睡觉都跟着晚。" },
+        { "en": "Less daytime left for sports and play.", "zh": "白天玩和运动的时间变少。" }
+      ]
+    },
+    {
+      "id": "smaller-classes",
+      "category": "school",
+      "title_en": "Should every class have fewer students?",
+      "title_zh": "每个班的人数应该更少吗？",
+      "pro": [
+        { "en": "The teacher can help each kid more.", "zh": "老师能更多地帮到每个孩子。" },
+        { "en": "It's easier to ask questions in a small class.", "zh": "班级小，更敢举手提问。" },
+        { "en": "Less noise means easier to focus.", "zh": "人少更安静，更容易专心。" }
+      ],
+      "con": [
+        { "en": "Schools would need many more teachers.", "zh": "学校得请多很多老师。" },
+        { "en": "Big classes help you make more friends.", "zh": "人多的班能交更多朋友。" },
+        { "en": "Some kids learn well by helping each other.", "zh": "有些孩子互相帮忙才学得好。" }
+      ]
+    },
+    {
+      "id": "repeat-grade",
+      "category": "school",
+      "title_en": "Should kids repeat a grade if they fail?",
+      "title_zh": "考不好应该留级吗？",
+      "pro": [
+        { "en": "A second year helps you really understand.", "zh": "多读一年能真正学懂。" },
+        { "en": "It's better than moving on confused.", "zh": "比稀里糊涂升上去强。" },
+        { "en": "Strong basics make the next year easier.", "zh": "基础打牢，下一年更轻松。" }
+      ],
+      "con": [
+        { "en": "Leaving your friends feels very lonely.", "zh": "离开好朋友会很孤单。" },
+        { "en": "It can make a kid feel like a failure.", "zh": "会让孩子觉得自己很失败。" },
+        { "en": "Extra help after class can work better.", "zh": "课后多辅导可能更有用。" }
+      ]
+    },
+    {
+      "id": "art-music",
+      "category": "school",
+      "title_en": "Should art and music be as important as math?",
+      "title_zh": "美术和音乐应该和数学一样重要吗？",
+      "pro": [
+        { "en": "Art and music make kids creative.", "zh": "美术和音乐培养创造力。" },
+        { "en": "Not everyone becomes a scientist.", "zh": "不是每个人都当科学家。" },
+        { "en": "Making music makes people happy and calm.", "zh": "玩音乐让人开心又放松。" }
+      ],
+      "con": [
+        { "en": "Math is used in almost every job.", "zh": "数学几乎所有工作都用得到。" },
+        { "en": "You can do art and music as a hobby.", "zh": "美术音乐可以当兴趣爱好。" },
+        { "en": "Weak math closes many doors later.", "zh": "数学差，以后很多路都走不通。" }
+      ]
+    },
+    {
+      "id": "own-smartphone",
+      "category": "tech",
+      "title_en": "Should kids have their own smartphone?",
+      "title_zh": "小孩应该有自己的智能手机吗？",
+      "pro": [
+        { "en": "Parents can reach you anytime for safety.", "zh": "爸妈随时联系得上，更安全。" },
+        { "en": "You can look things up and learn fast.", "zh": "随时查资料，学得快。" },
+        { "en": "Kids learn to manage their own time.", "zh": "孩子学会管理自己的时间。" }
+      ],
+      "con": [
+        { "en": "Phones are easy to get addicted to.", "zh": "手机很容易上瘾。" },
+        { "en": "Too much screen time hurts sleep and eyes.", "zh": "看太久伤睡眠也伤眼睛。" },
+        { "en": "Kids might see things made for grown-ups.", "zh": "孩子可能看到大人才该看的东西。" }
+      ]
+    },
+    {
+      "id": "screen-time-limit",
+      "category": "tech",
+      "title_en": "Should there be a limit on screen time?",
+      "title_zh": "应该限制看屏幕的时间吗？",
+      "pro": [
+        { "en": "Your eyes need a rest from screens.", "zh": "眼睛需要离开屏幕休息。" },
+        { "en": "A limit leaves time to play outside.", "zh": "有限制才有时间去户外玩。" },
+        { "en": "Too much screen makes it hard to sleep.", "zh": "看太多屏幕会睡不好。" }
+      ],
+      "con": [
+        { "en": "Not all screen time is bad — some is learning.", "zh": "不是所有屏幕时间都坏，有些是学习。" },
+        { "en": "Kids should learn to control it themselves.", "zh": "孩子应该学会自己控制。" },
+        { "en": "A strict rule can start big fights at home.", "zh": "硬性规定容易在家里引起争吵。" }
+      ]
+    },
+    {
+      "id": "social-media",
+      "category": "tech",
+      "title_en": "Should kids use social media?",
+      "title_zh": "小孩应该玩社交媒体吗？",
+      "pro": [
+        { "en": "You can stay in touch with faraway friends.", "zh": "能和远方的朋友保持联系。" },
+        { "en": "Kids share art, ideas, and learn from others.", "zh": "可以分享作品、想法，向别人学习。" },
+        { "en": "It's part of the world kids live in today.", "zh": "这是孩子今天生活的一部分。" }
+      ],
+      "con": [
+        { "en": "Some people are mean and bully online.", "zh": "网上有人刻薄、会欺负人。" },
+        { "en": "Comparing yourself to others makes you sad.", "zh": "总和别人比，会让自己难过。" },
+        { "en": "Strangers can pretend to be someone else.", "zh": "陌生人可以假装成别人。" }
+      ]
+    },
+    {
+      "id": "robot-chores",
+      "category": "tech",
+      "title_en": "Should robots do our chores?",
+      "title_zh": "机器人应该帮我们做家务吗？",
+      "pro": [
+        { "en": "Families get more time together.", "zh": "家人能有更多相处时间。" },
+        { "en": "Robots never get tired or complain.", "zh": "机器人不会累，也不会抱怨。" },
+        { "en": "They can help old or sick people a lot.", "zh": "能帮上年纪或生病的人大忙。" }
+      ],
+      "con": [
+        { "en": "Doing chores teaches kids responsibility.", "zh": "做家务能培养孩子的责任感。" },
+        { "en": "Robots are very expensive to buy.", "zh": "机器人买起来很贵。" },
+        { "en": "If a robot breaks, no one knows how to help.", "zh": "机器人坏了，没人会做家务了。" }
+      ]
+    },
+    {
+      "id": "tablets-textbooks",
+      "category": "tech",
+      "title_en": "Should schools use tablets instead of textbooks?",
+      "title_zh": "学校应该用平板代替课本吗？",
+      "pro": [
+        { "en": "One tablet holds all your books — no heavy bag.", "zh": "一块平板装下所有书，书包不重。" },
+        { "en": "Videos and games make lessons fun.", "zh": "视频和小游戏让上课更有趣。" },
+        { "en": "It saves a lot of paper and trees.", "zh": "省下很多纸，也救了树。" }
+      ],
+      "con": [
+        { "en": "It's easy to play games instead of studying.", "zh": "很容易玩游戏不学习。" },
+        { "en": "Tablets break, and the battery dies.", "zh": "平板会坏，电也会用光。" },
+        { "en": "Writing by hand helps you remember.", "zh": "手写更能记住知识。" }
+      ]
+    },
+    {
+      "id": "type-not-write",
+      "category": "tech",
+      "title_en": "Should kids learn to type instead of handwrite?",
+      "title_zh": "应该学打字，而不是手写吗？",
+      "pro": [
+        { "en": "Typing is faster for long work.", "zh": "写长东西，打字更快。" },
+        { "en": "Most grown-up jobs use a keyboard.", "zh": "大人的工作大多用键盘。" },
+        { "en": "Typed work is neat and easy to read.", "zh": "打出来的字工整、好认。" }
+      ],
+      "con": [
+        { "en": "Writing by hand helps your brain remember.", "zh": "手写帮大脑记得更牢。" },
+        { "en": "You can't always carry a keyboard.", "zh": "不可能随身带键盘。" },
+        { "en": "Beautiful handwriting is a real skill.", "zh": "一手好字是真本事。" }
+      ]
+    },
+    {
+      "id": "video-call-friends",
+      "category": "tech",
+      "title_en": "Can video calls replace visiting friends?",
+      "title_zh": "视频通话能代替见面吗？",
+      "pro": [
+        { "en": "You can talk to friends in other cities anytime.", "zh": "随时和外地的朋友聊天。" },
+        { "en": "It saves long travel time.", "zh": "省下长长的路上时间。" },
+        { "en": "You still see their face and smile.", "zh": "还是能看见对方的脸和笑容。" }
+      ],
+      "con": [
+        { "en": "You can't play tag through a screen.", "zh": "隔着屏幕没法一起玩抓人。" },
+        { "en": "A real hug feels better than a call.", "zh": "真实的拥抱比通话温暖。" },
+        { "en": "The internet can freeze and cut you off.", "zh": "网络会卡、会断。" }
+      ]
+    },
+    {
+      "id": "ai-choose-books",
+      "category": "tech",
+      "title_en": "Should AI choose what books we read?",
+      "title_zh": "应该让 AI 帮我们选书读吗？",
+      "pro": [
+        { "en": "AI knows what you like and finds it fast.", "zh": "AI 知道你喜欢什么，找得快。" },
+        { "en": "It can suggest books you never knew about.", "zh": "能推荐你从没听过的好书。" },
+        { "en": "No more wasting time picking.", "zh": "不用浪费时间挑来挑去。" }
+      ],
+      "con": [
+        { "en": "AI only shows what you already like — never new.", "zh": "AI 只给你喜欢的，永远碰不到新东西。" },
+        { "en": "Finding a surprise book yourself is exciting.", "zh": "自己淘到惊喜的书很兴奋。" },
+        { "en": "A teacher or friend gives warmer tips.", "zh": "老师或朋友的推荐更有温度。" }
+      ]
+    },
+    {
+      "id": "less-meat",
+      "category": "planet",
+      "title_en": "Should we all eat less meat to help the planet?",
+      "title_zh": "为了地球，大家应该少吃肉吗？",
+      "pro": [
+        { "en": "Raising animals uses huge amounts of water.", "zh": "养殖动物要用大量的水。" },
+        { "en": "Eating more plants is healthier for kids.", "zh": "多吃蔬菜对孩子更健康。" },
+        { "en": "Less meat means fewer forests cut down.", "zh": "少吃肉，就少砍森林。" }
+      ],
+      "con": [
+        { "en": "Growing kids need protein from meat.", "zh": "长身体的孩子需要肉里的蛋白质。" },
+        { "en": "People should choose their own food.", "zh": "吃什么应该自己决定。" },
+        { "en": "Some families have eaten meat for generations.", "zh": "有些家庭世代都吃肉。" }
+      ]
+    },
+    {
+      "id": "ban-cars-center",
+      "category": "planet",
+      "title_en": "Should cars be banned from city centers?",
+      "title_zh": "市中心应该禁止汽车吗？",
+      "pro": [
+        { "en": "The air gets much cleaner to breathe.", "zh": "空气会干净很多。" },
+        { "en": "Kids can walk and bike more safely.", "zh": "孩子走路骑车更安全。" },
+        { "en": "Quieter streets are nicer for everyone.", "zh": "街道更安静，大家都舒服。" }
+      ],
+      "con": [
+        { "en": "Some people can't walk far, like grandparents.", "zh": "有些人走不了远路，比如爷爷奶奶。" },
+        { "en": "Shops may lose customers who drive in.", "zh": "开车来的顾客少了，商店生意差。" },
+        { "en": "Buses and bikes can't carry everything.", "zh": "公交和自行车装不下所有东西。" }
+      ]
+    },
+    {
+      "id": "recycling-rule",
+      "category": "planet",
+      "title_en": "Should recycling be a rule for everyone?",
+      "title_zh": "回收垃圾应该是每个人必须遵守的规定吗？",
+      "pro": [
+        { "en": "Recycling saves trees, water, and energy.", "zh": "回收能省树、省水、省能源。" },
+        { "en": "Less trash means cleaner oceans and parks.", "zh": "垃圾少了，海洋和公园更干净。" },
+        { "en": "If everyone helps, the change is huge.", "zh": "人人都做，改变就很大。" }
+      ],
+      "con": [
+        { "en": "Sorting trash takes time and is confusing.", "zh": "分类垃圾费时间，又容易搞混。" },
+        { "en": "Teaching works better than forcing.", "zh": "教育比强迫更有用。" },
+        { "en": "Some places have no recycling bins yet.", "zh": "有些地方还没有回收桶。" }
+      ]
+    },
+    {
+      "id": "no-waste-food",
+      "category": "planet",
+      "title_en": "Should wasting food be against the rules?",
+      "title_zh": "浪费食物应该被禁止吗？",
+      "pro": [
+        { "en": "Millions of people don't have enough to eat.", "zh": "还有几百万人吃不饱。" },
+        { "en": "Throwing food away wastes water and land.", "zh": "倒掉食物就是浪费水和土地。" },
+        { "en": "It teaches kids to be thankful.", "zh": "教孩子懂得珍惜。" }
+      ],
+      "con": [
+        { "en": "You can't always finish food that's gone bad.", "zh": "坏掉的食物没法硬吃完。" },
+        { "en": "Forcing kids to eat can make them sick.", "zh": "逼孩子吃光可能吃坏肚子。" },
+        { "en": "Sharing leftovers works better than a rule.", "zh": "把剩饭分享出去比定规矩更好。" }
+      ]
+    },
+    {
+      "id": "school-garden",
+      "category": "planet",
+      "title_en": "Should every school have a garden?",
+      "title_zh": "每个学校都应该有花园吗？",
+      "pro": [
+        { "en": "Kids learn where food really comes from.", "zh": "孩子明白食物是怎么来的。" },
+        { "en": "Plants make the air and mood better.", "zh": "植物让空气和心情都变好。" },
+        { "en": "Growing things teaches patience.", "zh": "种东西能培养耐心。" }
+      ],
+      "con": [
+        { "en": "Gardens cost money and need care every day.", "zh": "花园要花钱，还得天天打理。" },
+        { "en": "Not every school has the space.", "zh": "不是每个学校都有地方。" },
+        { "en": "That time could be used for other lessons.", "zh": "那些时间可以用来上别的课。" }
+      ]
+    },
+    {
+      "id": "wild-pets",
+      "category": "planet",
+      "title_en": "Should wild animals ever be kept as pets?",
+      "title_zh": "野生动物可以当宠物养吗？",
+      "pro": [
+        { "en": "Some hurt animals are safer with people.", "zh": "有些受伤的动物跟着人更安全。" },
+        { "en": "Caring for one teaches kids about nature.", "zh": "照顾它能让孩子了解大自然。" },
+        { "en": "Rescue centers save animals that can't survive alone.", "zh": "救助站能救活无法独自生存的动物。" }
+      ],
+      "con": [
+        { "en": "Wild animals belong in the wild, free.", "zh": "野生动物属于自由的野外。" },
+        { "en": "They can be dangerous as they grow big.", "zh": "长大后可能很危险。" },
+        { "en": "Most homes can't give them what they need.", "zh": "大多数家庭给不了它们需要的。" }
+      ]
+    },
+    {
+      "id": "plant-a-tree",
+      "category": "planet",
+      "title_en": "Should we plant a new tree for every tree we cut?",
+      "title_zh": "砍一棵树就该种一棵新树吗？",
+      "pro": [
+        { "en": "Trees make the air we breathe.", "zh": "树制造我们呼吸的空气。" },
+        { "en": "New trees give animals a home.", "zh": "新树给动物一个家。" },
+        { "en": "It keeps forests from disappearing.", "zh": "森林就不会慢慢消失。" }
+      ],
+      "con": [
+        { "en": "A new tree takes many years to grow big.", "zh": "新树要很多年才长大。" },
+        { "en": "It's hard to check that everyone does it.", "zh": "很难检查每个人都做到了。" },
+        { "en": "Saving old forests matters even more.", "zh": "保护老森林更重要。" }
+      ]
+    },
+    {
+      "id": "ban-plastic-toys",
+      "category": "planet",
+      "title_en": "Should plastic toys be banned?",
+      "title_zh": "应该禁止塑料玩具吗？",
+      "pro": [
+        { "en": "Broken plastic toys pollute for hundreds of years.", "zh": "坏掉的塑料玩具污染几百年。" },
+        { "en": "Wooden toys last longer and are safer.", "zh": "木头玩具更耐用、更安全。" },
+        { "en": "Kids have too many toys they forget anyway.", "zh": "孩子的玩具多到根本玩不过来。" }
+      ],
+      "con": [
+        { "en": "Plastic toys are cheap so all kids can have them.", "zh": "塑料玩具便宜，每个孩子都买得起。" },
+        { "en": "We can recycle them instead of banning.", "zh": "可以回收，不一定要禁止。" },
+        { "en": "Many favorite toys are only made in plastic.", "zh": "很多最爱的玩具只有塑料款。" }
+      ]
+    },
+    {
+      "id": "kids-chores",
+      "category": "family",
+      "title_en": "Should kids do chores at home?",
+      "title_zh": "小孩应该做家务吗？",
+      "pro": [
+        { "en": "Chores teach you to take care of yourself.", "zh": "家务教你照顾自己。" },
+        { "en": "It's fair when the whole family helps.", "zh": "全家一起做才公平。" },
+        { "en": "You feel proud after finishing a job.", "zh": "做完一件事会很有成就感。" }
+      ],
+      "con": [
+        { "en": "Kids already have school and homework.", "zh": "孩子已经有学校和作业了。" },
+        { "en": "Some chores are unsafe for little kids.", "zh": "有些家务对小孩不安全。" },
+        { "en": "Playtime is important for growing up too.", "zh": "玩耍对成长也很重要。" }
+      ]
+    },
+    {
+      "id": "own-bedtime",
+      "category": "family",
+      "title_en": "Should kids decide their own bedtime?",
+      "title_zh": "小孩应该自己决定几点睡吗？",
+      "pro": [
+        { "en": "Kids learn to listen to their own body.", "zh": "孩子学会听自己身体的信号。" },
+        { "en": "Choosing teaches responsibility.", "zh": "自己做决定能学会负责。" },
+        { "en": "Some kids really do focus better at night.", "zh": "有些孩子晚上确实更专注。" }
+      ],
+      "con": [
+        { "en": "Kids need lots of sleep to grow.", "zh": "孩子要睡够才能长身体。" },
+        { "en": "Late nights make morning class hard.", "zh": "睡太晚，早上上课很困。" },
+        { "en": "Without a rule, fun always wins over sleep.", "zh": "没规定，玩永远赢过睡觉。" }
+      ]
+    },
+    {
+      "id": "pay-for-grades",
+      "category": "family",
+      "title_en": "Should kids get paid for good grades?",
+      "title_zh": "考得好应该拿钱奖励吗？",
+      "pro": [
+        { "en": "A reward gives you a reason to try hard.", "zh": "有奖励就有努力的理由。" },
+        { "en": "It feels great to earn your own money.", "zh": "靠自己挣钱感觉很棒。" },
+        { "en": "It's like how grown-ups get paid for good work.", "zh": "就像大人工作好就有报酬。" }
+      ],
+      "con": [
+        { "en": "You should learn for yourself, not for money.", "zh": "学习是为自己，不是为了钱。" },
+        { "en": "Kids may cheat just to get the reward.", "zh": "孩子可能为了钱去作弊。" },
+        { "en": "When the money stops, so does the effort.", "zh": "没钱了，努力也停了。" }
+      ]
+    },
+    {
+      "id": "one-screen",
+      "category": "family",
+      "title_en": "Should a family share just one screen at home?",
+      "title_zh": "一家人在家应该只用一块屏幕吗？",
+      "pro": [
+        { "en": "The family watches and talks together.", "zh": "全家一起看、一起聊。" },
+        { "en": "Less screen time for everyone.", "zh": "每个人的屏幕时间都变少。" },
+        { "en": "Kids can't hide what they watch.", "zh": "孩子没法偷偷看东西。" }
+      ],
+      "con": [
+        { "en": "Everyone likes different shows.", "zh": "每个人喜欢的节目不一样。" },
+        { "en": "Parents may need a screen for work.", "zh": "爸妈工作可能要用屏幕。" },
+        { "en": "Fighting over one screen causes arguments.", "zh": "抢一块屏幕容易吵架。" }
+      ]
+    },
+    {
+      "id": "kids-vote",
+      "category": "family",
+      "title_en": "Should kids be allowed to vote?",
+      "title_zh": "小孩应该有投票权吗？",
+      "pro": [
+        { "en": "Choices made today shape the kids' future.", "zh": "今天的决定影响孩子的未来。" },
+        { "en": "Voting young teaches kids to care.", "zh": "从小投票教孩子关心社会。" },
+        { "en": "Kids have smart ideas adults miss.", "zh": "孩子有大人想不到的好点子。" }
+      ],
+      "con": [
+        { "en": "Big choices need lots of life experience.", "zh": "重大决定需要丰富的人生经验。" },
+        { "en": "Kids could be easily tricked into a choice.", "zh": "孩子容易被骗着投票。" },
+        { "en": "Kids can learn first and vote when older.", "zh": "可以先学，长大再投。" }
+      ]
+    },
+    {
+      "id": "grandparents-live",
+      "category": "family",
+      "title_en": "Should grandparents live with the family?",
+      "title_zh": "爷爷奶奶应该和家人住在一起吗？",
+      "pro": [
+        { "en": "Grandparents share wonderful stories and skills.", "zh": "祖辈能讲故事、教手艺。" },
+        { "en": "The family can care for them as they age.", "zh": "他们老了，家人能照顾。" },
+        { "en": "Kids grow up close to their family roots.", "zh": "孩子从小和家族的根更亲。" }
+      ],
+      "con": [
+        { "en": "Homes can get crowded and noisy.", "zh": "家里会变得拥挤又吵。" },
+        { "en": "Grown-ups may argue about how to raise kids.", "zh": "大人可能为怎么带孩子吵架。" },
+        { "en": "Grandparents may want their own quiet space.", "zh": "祖辈可能想要自己安静的空间。" }
+      ]
+    },
+    {
+      "id": "travel-young",
+      "category": "family",
+      "title_en": "Should kids travel to other countries while young?",
+      "title_zh": "小孩应该趁小多去别的国家旅行吗？",
+      "pro": [
+        { "en": "Seeing the world teaches more than books.", "zh": "看世界学到的比书本多。" },
+        { "en": "Kids learn that people live in many ways.", "zh": "孩子明白人们有各种生活方式。" },
+        { "en": "Trying new food and languages is fun.", "zh": "尝新食物、学新语言很有趣。" }
+      ],
+      "con": [
+        { "en": "Travel costs a lot of money.", "zh": "旅行很花钱。" },
+        { "en": "Young kids forget most of the trip.", "zh": "小孩大多会忘掉旅行的事。" },
+        { "en": "Missing school can set learning back.", "zh": "缺课会落下功课。" }
+      ]
+    },
+    {
+      "id": "ban-junk-food",
+      "category": "health",
+      "title_en": "Should junk food be banned at school?",
+      "title_zh": "学校应该禁止垃圾食品吗？",
+      "pro": [
+        { "en": "Healthy food helps kids focus and grow.", "zh": "健康食物帮孩子专注、长高。" },
+        { "en": "Too much junk food makes kids sick.", "zh": "吃太多垃圾食品会生病。" },
+        { "en": "School should teach good habits.", "zh": "学校应该教好习惯。" }
+      ],
+      "con": [
+        { "en": "A treat once in a while is okay.", "zh": "偶尔吃点没关系。" },
+        { "en": "Kids should learn to choose, not be forced.", "zh": "孩子应学会选择，而不是被强迫。" },
+        { "en": "Kids may just buy junk food outside.", "zh": "孩子可能跑到校外去买。" }
+      ]
+    },
+    {
+      "id": "ban-sugary-drinks",
+      "category": "health",
+      "title_en": "Should sugary drinks be banned for kids?",
+      "title_zh": "应该禁止小孩喝含糖饮料吗？",
+      "pro": [
+        { "en": "Too much sugar rots your teeth.", "zh": "糖太多会蛀牙。" },
+        { "en": "Water and milk are far healthier.", "zh": "水和牛奶健康得多。" },
+        { "en": "Sugar highs make it hard to focus in class.", "zh": "糖吃多了上课坐不住。" }
+      ],
+      "con": [
+        { "en": "One drink at a party is no big deal.", "zh": "聚会喝一杯没什么大不了。" },
+        { "en": "Kids should learn balance, not bans.", "zh": "应学会适量，而不是一刀切。" },
+        { "en": "Banning makes kids want it even more.", "zh": "越禁孩子越想喝。" }
+      ]
+    },
+    {
+      "id": "everyone-sport",
+      "category": "health",
+      "title_en": "Should every kid play a sport?",
+      "title_zh": "每个小孩都应该做一项运动吗？",
+      "pro": [
+        { "en": "Sport keeps your body strong and healthy.", "zh": "运动让身体强壮健康。" },
+        { "en": "Team sports teach teamwork and rules.", "zh": "团队运动教合作和规则。" },
+        { "en": "Exercise lifts your mood after a hard day.", "zh": "累了一天，运动能让心情变好。" }
+      ],
+      "con": [
+        { "en": "Some kids prefer music, art, or chess.", "zh": "有些孩子喜欢音乐、美术或象棋。" },
+        { "en": "Forcing sport can make kids hate it.", "zh": "逼着做运动会让孩子讨厌它。" },
+        { "en": "Some kids get hurt or feel left out.", "zh": "有些孩子会受伤或被冷落。" }
+      ]
+    },
+    {
+      "id": "free-lunch",
+      "category": "health",
+      "title_en": "Should school lunch be free for everyone?",
+      "title_zh": "学校午餐应该对所有人免费吗？",
+      "pro": [
+        { "en": "No hungry kid is too tired to learn.", "zh": "没有饿肚子的孩子，没人因饿而学不进。" },
+        { "en": "All kids eat the same, so no one feels poor.", "zh": "大家吃一样的，没人觉得自己穷。" },
+        { "en": "Parents have one less thing to worry about.", "zh": "爸妈少操一份心。" }
+      ],
+      "con": [
+        { "en": "Free lunch costs the school a lot.", "zh": "免费午餐学校要花很多钱。" },
+        { "en": "Some kids like bringing food from home.", "zh": "有些孩子喜欢自带饭菜。" },
+        { "en": "Free food can get wasted more easily.", "zh": "免费的食物更容易被浪费。" }
+      ]
+    },
+    {
+      "id": "sleep-vs-study",
+      "category": "health",
+      "title_en": "Is sleep more important than studying?",
+      "title_zh": "睡觉比学习更重要吗？",
+      "pro": [
+        { "en": "A tired brain can't remember anything.", "zh": "累坏的大脑什么都记不住。" },
+        { "en": "Sleep is when your body grows.", "zh": "身体是在睡觉时长大的。" },
+        { "en": "Well-rested kids are happier and kinder.", "zh": "睡好的孩子更开心、更友善。" }
+      ],
+      "con": [
+        { "en": "Without studying, you fall behind.", "zh": "不学习就会落后。" },
+        { "en": "You can plan time for both.", "zh": "可以安排好两者的时间。" },
+        { "en": "Big goals sometimes need a late night.", "zh": "为大目标偶尔熬夜也值得。" }
+      ]
+    },
+    {
+      "id": "breakfast-everyday",
+      "category": "health",
+      "title_en": "Should kids eat breakfast every day before school?",
+      "title_zh": "上学前每天都应该吃早餐吗？",
+      "pro": [
+        { "en": "Breakfast gives you energy to think.", "zh": "早餐给你思考的能量。" },
+        { "en": "Hungry kids can't focus by mid-morning.", "zh": "饿着的孩子上午就坐不住了。" },
+        { "en": "It's the start of a healthy day.", "zh": "健康一天的开始。" }
+      ],
+      "con": [
+        { "en": "Some kids feel sick eating too early.", "zh": "有些孩子太早吃会想吐。" },
+        { "en": "Rushing to eat causes stress in the morning.", "zh": "赶着吃早饭让早上很慌乱。" },
+        { "en": "A later snack can work just as well.", "zh": "晚点吃个加餐一样行。" }
+      ]
+    },
+    {
+      "id": "video-games-good",
+      "category": "fun",
+      "title_en": "Are video games good for kids?",
+      "title_zh": "电子游戏对小孩有好处吗？",
+      "pro": [
+        { "en": "Games teach you to solve problems fast.", "zh": "游戏教你快速解决问题。" },
+        { "en": "Many games are played in English.", "zh": "很多游戏是英文的，能练英语。" },
+        { "en": "Playing with friends online is teamwork.", "zh": "和朋友联机也是团队合作。" }
+      ],
+      "con": [
+        { "en": "Games are easy to play for too long.", "zh": "游戏很容易一玩就停不下来。" },
+        { "en": "Some games are too violent for kids.", "zh": "有些游戏对孩子太暴力。" },
+        { "en": "Too much gaming means less time outside.", "zh": "玩太多，户外时间就没了。" }
+      ]
+    },
+    {
+      "id": "books-vs-movies",
+      "category": "fun",
+      "title_en": "Are books better than movies?",
+      "title_zh": "书比电影更好吗？",
+      "pro": [
+        { "en": "Books let your imagination picture it all.", "zh": "看书能让想象力自己描绘画面。" },
+        { "en": "Reading grows your vocabulary.", "zh": "阅读能扩大词汇量。" },
+        { "en": "A book tells you what characters think.", "zh": "书能告诉你角色心里在想什么。" }
+      ],
+      "con": [
+        { "en": "Movies show the story in a fun, fast way.", "zh": "电影把故事讲得快又有趣。" },
+        { "en": "You can enjoy a movie with friends together.", "zh": "可以和朋友一起看电影。" },
+        { "en": "Some stories look amazing on screen.", "zh": "有些故事在大银幕上特别震撼。" }
+      ]
+    },
+    {
+      "id": "homework-free-weekend",
+      "category": "fun",
+      "title_en": "Should weekends be homework-free?",
+      "title_zh": "周末应该没有作业吗？",
+      "pro": [
+        { "en": "Kids need real rest after a long week.", "zh": "累了一周，孩子需要真正休息。" },
+        { "en": "Weekends are for family and friends.", "zh": "周末是留给家人和朋友的。" },
+        { "en": "A rested kid learns better on Monday.", "zh": "休息好，周一学得更好。" }
+      ],
+      "con": [
+        { "en": "A little practice keeps lessons fresh.", "zh": "练一点点能保持记忆。" },
+        { "en": "Weekends give time for big projects.", "zh": "周末有时间做大作业。" },
+        { "en": "Without any, some kids forget by Monday.", "zh": "完全不做，有些孩子周一就忘光。" }
+      ]
+    },
+    {
+      "id": "longer-summer",
+      "category": "fun",
+      "title_en": "Should summer holidays be longer?",
+      "title_zh": "暑假应该更长吗？",
+      "pro": [
+        { "en": "Long breaks let kids try camps and hobbies.", "zh": "长假能去夏令营、玩兴趣。" },
+        { "en": "Everyone comes back fresh and ready.", "zh": "回来后精神满满。" },
+        { "en": "Families can take longer trips together.", "zh": "全家能一起长途旅行。" }
+      ],
+      "con": [
+        { "en": "Kids forget a lot over a long break.", "zh": "假太长，学的东西忘很多。" },
+        { "en": "Working parents have no one to watch kids.", "zh": "上班的爸妈没人看孩子。" },
+        { "en": "Too much free time gets boring.", "zh": "太闲反而无聊。" }
+      ]
+    },
+    {
+      "id": "comics-reading",
+      "category": "fun",
+      "title_en": "Do comics count as real reading?",
+      "title_zh": "看漫画算真正的阅读吗？",
+      "pro": [
+        { "en": "Comics get kids who hate books to read.", "zh": "漫画能让不爱书的孩子开始读。" },
+        { "en": "Pictures plus words tell rich stories.", "zh": "图加字能讲很丰富的故事。" },
+        { "en": "Many comics use clever, fun language.", "zh": "很多漫画的语言又巧又有趣。" }
+      ],
+      "con": [
+        { "en": "Comics have fewer words to learn from.", "zh": "漫画字少，学到的词不多。" },
+        { "en": "Pictures do the work your brain should.", "zh": "图替你想了，大脑就偷懒。" },
+        { "en": "Long books build longer focus.", "zh": "读长书能练更长的专注力。" }
+      ]
+    },
+    {
+      "id": "cartoons-any-language",
+      "category": "fun",
+      "title_en": "Should kids watch cartoons in any language?",
+      "title_zh": "小孩可以看任何语言的动画片吗？",
+      "pro": [
+        { "en": "You pick up new languages without trying.", "zh": "不知不觉学会新语言。" },
+        { "en": "You learn about other countries and ways of life.", "zh": "了解别的国家和生活方式。" },
+        { "en": "Subtitles help you read along.", "zh": "字幕还能帮你跟读。" }
+      ],
+      "con": [
+        { "en": "You may miss jokes in a language you don't know.", "zh": "听不懂的语言会错过笑点。" },
+        { "en": "It's tiring to read subtitles the whole time.", "zh": "一直看字幕很累。" },
+        { "en": "First get strong in your own language.", "zh": "先把母语学扎实。" }
+      ]
+    },
+    {
+      "id": "winning-vs-fun",
+      "category": "values",
+      "title_en": "Is winning more important than having fun?",
+      "title_zh": "赢比开心更重要吗？",
+      "pro": [
+        { "en": "Trying to win makes you give your best.", "zh": "想赢才会拼尽全力。" },
+        { "en": "Winning feels amazing after hard work.", "zh": "努力后赢了，感觉超棒。" },
+        { "en": "The world rewards people who aim high.", "zh": "这个世界奖励有追求的人。" }
+      ],
+      "con": [
+        { "en": "If only winning matters, losing crushes you.", "zh": "只看输赢，输了会很受打击。" },
+        { "en": "You make friends by having fun, not winning.", "zh": "交朋友靠开心，不是靠赢。" },
+        { "en": "Fun is why we play games at all.", "zh": "开心本来就是玩的意义。" }
+      ]
+    },
+    {
+      "id": "always-truth",
+      "category": "values",
+      "title_en": "Is it always best to tell the truth?",
+      "title_zh": "永远说实话才是最好的吗？",
+      "pro": [
+        { "en": "People trust you when you're honest.", "zh": "诚实的人才被信任。" },
+        { "en": "One lie often needs more lies to hide it.", "zh": "一个谎要用更多谎来圆。" },
+        { "en": "The truth feels lighter than a secret.", "zh": "说实话比藏秘密轻松。" }
+      ],
+      "con": [
+        { "en": "A kind 'white lie' can save someone's feelings.", "zh": "善意的小谎能照顾别人心情。" },
+        { "en": "Some hard truths are better said gently.", "zh": "难听的实话该说得温和点。" },
+        { "en": "Not every secret is yours to tell.", "zh": "不是每个秘密都该由你说出。" }
+      ]
+    },
+    {
+      "id": "famous-vs-ordinary",
+      "category": "values",
+      "title_en": "Is being famous better than being ordinary?",
+      "title_zh": "出名比当普通人更好吗？",
+      "pro": [
+        { "en": "Famous people can help many others.", "zh": "名人能帮助很多人。" },
+        { "en": "Fame can come from doing great work.", "zh": "名气可以来自了不起的成就。" },
+        { "en": "People listen to your ideas.", "zh": "你的想法有人听。" }
+      ],
+      "con": [
+        { "en": "Famous people lose their privacy.", "zh": "名人没有隐私。" },
+        { "en": "Strangers judge everything you do.", "zh": "陌生人对你做的每件事指指点点。" },
+        { "en": "Ordinary life can be calm and happy.", "zh": "平凡的生活可以安稳又幸福。" }
+      ]
+    },
+    {
+      "id": "money-happiness",
+      "category": "values",
+      "title_en": "Does money make people happy?",
+      "title_zh": "钱能让人快乐吗？",
+      "pro": [
+        { "en": "Money buys food, a home, and safety.", "zh": "钱能买食物、房子和安全感。" },
+        { "en": "It lets you help your family and others.", "zh": "能帮家人，也能帮别人。" },
+        { "en": "It opens doors to learning and travel.", "zh": "能换来学习和旅行的机会。" }
+      ],
+      "con": [
+        { "en": "Friends and family matter more than money.", "zh": "朋友和家人比钱更重要。" },
+        { "en": "Rich people can still feel lonely.", "zh": "有钱人也可能很孤单。" },
+        { "en": "The best things — like love — are free.", "zh": "最好的东西，比如爱，是免费的。" }
+      ]
+    },
+    {
+      "id": "smart-vs-kind",
+      "category": "values",
+      "title_en": "Is it better to be smart or to be kind?",
+      "title_zh": "聪明和善良，哪个更好？",
+      "pro": [
+        { "en": "Smart people solve big, hard problems.", "zh": "聪明人能解决又大又难的问题。" },
+        { "en": "Being smart helps you learn anything fast.", "zh": "聪明让你学什么都快。" },
+        { "en": "Clever ideas can change the world.", "zh": "聪明的点子能改变世界。" }
+      ],
+      "con": [
+        { "en": "Kindness makes everyone around you happy.", "zh": "善良让身边的人都开心。" },
+        { "en": "People remember how you treated them.", "zh": "人们记得你怎么对待他们。" },
+        { "en": "A kind person is never truly alone.", "zh": "善良的人永远不会真正孤单。" }
+      ]
+    }
+  ]
+}

@@ -23,6 +23,13 @@ const modules = [
     icon: <span className="text-5xl">📋</span>,
   },
   {
+    title: "Top 50 Motions",
+    subtitle: "Predicted Topics",
+    subtitle_zh: "押题 50 · 快速浏览找点",
+    href: "/predictions",
+    icon: <span className="text-5xl">🔮</span>,
+  },
+  {
     title: "PREP Structure",
     subtitle: "The Scroll of Courage",
     subtitle_zh: "勇气之卷 · 3 分钟会 PREP",
