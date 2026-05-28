@@ -23,9 +23,9 @@ const modules = [
     icon: <span className="text-5xl">📋</span>,
   },
   {
-    title: "Top 50 Motions",
-    subtitle: "Predicted Topics",
-    subtitle_zh: "押题 50 · 快速浏览找点",
+    title: "Top 60 Motions",
+    subtitle: "Predicted · AI-heavy",
+    subtitle_zh: "押题 60 · AI 类最多",
     href: "/predictions",
     icon: <span className="text-5xl">🔮</span>,
   },

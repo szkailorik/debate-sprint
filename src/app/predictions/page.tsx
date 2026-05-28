@@ -124,7 +124,7 @@ export default function PredictionsPage() {
 
         <div className="ornament-divider mt-12" />
         <p className="text-center text-sm text-[var(--color-ink-soft)]">
-          ⚔ Plus the 13 in the Armory = 63 topics ready · 加上武器库 13 个，共 63 题在手 ⚔
+          ⚔ Plus the 13 in the Armory = 73 topics ready · 加上武器库 13 个，共 73 题在手 ⚔
         </p>
       </main>
     </>

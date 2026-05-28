@@ -1,13 +1,14 @@
 {
   "meta": {
-    "title_en": "Top 50 Predicted Motions",
-    "title_zh": "押题 50",
-    "note_en": "Likely motions for junior English debate in China (NSDA Junior / NHSDLC Junior style): life-oriented, beginner-friendly. Scan fast, grab the points you like.",
-    "note_zh": "根据中国小学英文辩论赛（NSDA Junior / NHSDLC Junior 风格）预测：生活化、适合初级选手。快速浏览，挑你喜欢的点记下来。"
+    "title_en": "Top 60 Predicted Motions",
+    "title_zh": "押题 60",
+    "note_en": "Likely motions for junior English debate in China (NSDA Junior / NHSDLC Junior style): life-oriented, beginner-friendly. AI is the hottest theme for 2026 — the 🧠 AI category has the most topics. Scan fast, grab the points you like.",
+    "note_zh": "根据中国小学英文辩论赛（NSDA Junior / NHSDLC Junior 风格）预测：生活化、适合初级选手。AI 是 2026 年最热主题——🧠 AI 类辩题最多。快速浏览，挑你喜欢的点记下来。"
   },
   "categories": [
+    { "id": "ai", "name_en": "AI (Hottest in 2026)", "name_zh": "AI 人工智能（2026 最热）", "emoji": "🧠" },
     { "id": "school", "name_en": "School & Learning", "name_zh": "学校与学习", "emoji": "🎒" },
-    { "id": "tech", "name_en": "Technology & AI", "name_zh": "科技与 AI", "emoji": "🤖" },
+    { "id": "tech", "name_en": "Devices & Screens", "name_zh": "电子设备与屏幕", "emoji": "📱" },
     { "id": "planet", "name_en": "Environment & Animals", "name_zh": "环境与动物", "emoji": "🌍" },
     { "id": "family", "name_en": "Family & Society", "name_zh": "家庭与社会", "emoji": "🏠" },
     { "id": "health", "name_en": "Health & Food", "name_zh": "健康与饮食", "emoji": "🥗" },
@@ -15,6 +16,166 @@
     { "id": "values", "name_en": "Values & Big Questions", "name_zh": "价值观与大问题", "emoji": "💡" }
   ],
   "topics": [
+    {
+      "id": "ai-cheating",
+      "category": "ai",
+      "title_en": "Is using AI to do your homework cheating?",
+      "title_zh": "用 AI 做作业算作弊吗？",
+      "pro": [
+        { "en": "The teacher thinks YOU did it, but you didn't.", "zh": "老师以为是你做的，其实不是。" },
+        { "en": "You learn nothing when AI does the work.", "zh": "AI 替你做，你什么都没学到。" },
+        { "en": "It's unfair to classmates who did it themselves.", "zh": "对自己做的同学不公平。" }
+      ],
+      "con": [
+        { "en": "It's a tool, like a calculator or dictionary.", "zh": "它是工具，像计算器或字典。" },
+        { "en": "Asking AI to explain a problem helps you learn.", "zh": "让 AI 讲解题目能帮你学。" },
+        { "en": "What matters is that you understand it in the end.", "zh": "重要的是你最后真懂了。" }
+      ]
+    },
+    {
+      "id": "ai-art",
+      "category": "ai",
+      "title_en": "Should AI-made art count as real art?",
+      "title_zh": "AI 画的画算真正的艺术吗？",
+      "pro": [
+        { "en": "A person still chooses the idea and the words.", "zh": "还是人来想点子、写指令。" },
+        { "en": "It lets people who can't draw create beauty.", "zh": "让不会画画的人也能创作美。" },
+        { "en": "New tools have always made new kinds of art.", "zh": "新工具一直在创造新艺术。" }
+      ],
+      "con": [
+        { "en": "Real art comes from human feelings and effort.", "zh": "真艺术来自人的情感和努力。" },
+        { "en": "AI just mixes up art that other people made.", "zh": "AI 只是把别人的作品拼起来。" },
+        { "en": "A machine can't feel what it is making.", "zh": "机器感受不到自己在做什么。" }
+      ]
+    },
+    {
+      "id": "self-driving",
+      "category": "ai",
+      "title_en": "Should self-driving cars be allowed on the road?",
+      "title_zh": "应该允许无人驾驶汽车上路吗？",
+      "pro": [
+        { "en": "Computers don't get tired or distracted.", "zh": "电脑不会累，也不会分心。" },
+        { "en": "They could stop many accidents caused by people.", "zh": "能避免很多人为事故。" },
+        { "en": "Blind or old people could travel on their own.", "zh": "盲人或老人也能自己出行。" }
+      ],
+      "con": [
+        { "en": "If the computer makes a mistake, who is to blame?", "zh": "电脑出错了，怪谁？" },
+        { "en": "A surprise on the road could confuse the car.", "zh": "路上突发情况会让车搞不清。" },
+        { "en": "People could forget how to drive at all.", "zh": "人会彻底忘了怎么开车。" }
+      ]
+    },
+    {
+      "id": "ai-lazy",
+      "category": "ai",
+      "title_en": "Does using AI make our brains lazy?",
+      "title_zh": "用 AI 会让我们的脑子变懒吗？",
+      "pro": [
+        { "en": "If AI answers everything, you stop thinking.", "zh": "AI 什么都答，你就不动脑了。" },
+        { "en": "You can't remember what you never figured out.", "zh": "没自己想出来的东西记不住。" },
+        { "en": "Easy answers make real thinking feel boring.", "zh": "答案太容易，深度思考就显得无聊。" }
+      ],
+      "con": [
+        { "en": "It frees your brain for bigger, harder ideas.", "zh": "把大脑解放去想更难的问题。" },
+        { "en": "You still have to ask the right questions.", "zh": "你还是得会问对问题。" },
+        { "en": "The calculator didn't make us bad at math.", "zh": "计算器没让我们数学变差。" }
+      ]
+    },
+    {
+      "id": "ai-grade",
+      "category": "ai",
+      "title_en": "Should AI grade students' homework and tests?",
+      "title_zh": "应该让 AI 给学生批改作业和考试吗？",
+      "pro": [
+        { "en": "AI gives back your score in seconds.", "zh": "AI 几秒就给出分数。" },
+        { "en": "It treats every student exactly the same.", "zh": "对每个学生一模一样，公平。" },
+        { "en": "Teachers get more time to actually teach.", "zh": "老师有更多时间真正教学。" }
+      ],
+      "con": [
+        { "en": "AI can't understand a creative, surprising answer.", "zh": "AI 看不懂有创意的答案。" },
+        { "en": "A teacher knows how hard YOU tried.", "zh": "老师知道你有多努力。" },
+        { "en": "One wrong setting could give everyone a bad mark.", "zh": "设置一错，全班都遭殃。" }
+      ]
+    },
+    {
+      "id": "ai-know-human",
+      "category": "ai",
+      "title_en": "Should you always be told when you're talking to an AI?",
+      "title_zh": "和 AI 说话时，是否应该被明确告知它不是真人？",
+      "pro": [
+        { "en": "Tricking people into trusting a machine is unfair.", "zh": "骗人去信任机器不公平。" },
+        { "en": "Kids might share secrets with an AI by mistake.", "zh": "孩子可能误把秘密告诉 AI。" },
+        { "en": "You act differently with a robot than a friend.", "zh": "对机器和对朋友，你会不一样。" }
+      ],
+      "con": [
+        { "en": "A good answer is good, human or not.", "zh": "好答案就是好答案，人或机器都一样。" },
+        { "en": "You can usually tell it's an AI anyway.", "zh": "反正你通常能看出来是 AI。" },
+        { "en": "Announcing it every single time wastes time.", "zh": "每次都声明很浪费时间。" }
+      ]
+    },
+    {
+      "id": "ai-bedtime",
+      "category": "ai",
+      "title_en": "Should AI read bedtime stories to kids?",
+      "title_zh": "应该让 AI 给小孩讲睡前故事吗？",
+      "pro": [
+        { "en": "It can make up a brand-new story every night.", "zh": "每晚都能编一个全新故事。" },
+        { "en": "It's never too tired to read one more.", "zh": "永远不会累得不想再讲一个。" },
+        { "en": "Busy parents get a little help.", "zh": "忙碌的爸妈能轻松一点。" }
+      ],
+      "con": [
+        { "en": "Bedtime is special time with mom or dad.", "zh": "睡前是和爸妈的特别时光。" },
+        { "en": "A parent's voice makes kids feel safe.", "zh": "爸妈的声音让孩子有安全感。" },
+        { "en": "AI doesn't know which story YOU love most.", "zh": "AI 不知道你最爱哪个故事。" }
+      ]
+    },
+    {
+      "id": "ai-eldercare",
+      "category": "ai",
+      "title_en": "Should robots take care of old people?",
+      "title_zh": "应该让机器人照顾老人吗？",
+      "pro": [
+        { "en": "Robots can help 24 hours and never sleep.", "zh": "机器人能 24 小时帮忙，不用睡。" },
+        { "en": "They can lift and move people safely.", "zh": "能安全地扶起、搬动老人。" },
+        { "en": "There aren't enough nurses for everyone.", "zh": "护士根本不够用。" }
+      ],
+      "con": [
+        { "en": "Old people need real company, not machines.", "zh": "老人需要真人陪伴，不是机器。" },
+        { "en": "A robot can't hold your hand and truly care.", "zh": "机器人不会握着你的手真心关怀。" },
+        { "en": "If it breaks, the person is left all alone.", "zh": "机器一坏，人就没人管了。" }
+      ]
+    },
+    {
+      "id": "ai-watch",
+      "category": "ai",
+      "title_en": "Should AI choose what videos kids watch?",
+      "title_zh": "应该让 AI 决定小孩看什么视频吗？",
+      "pro": [
+        { "en": "It quickly finds videos you'll enjoy.", "zh": "很快找到你爱看的视频。" },
+        { "en": "It can block scary or unsafe videos.", "zh": "能挡掉吓人或不安全的视频。" },
+        { "en": "You waste less time searching.", "zh": "少花时间到处找。" }
+      ],
+      "con": [
+        { "en": "AI shows the same kind of video forever.", "zh": "AI 老是推同一种视频。" },
+        { "en": "It can pull you in for hours.", "zh": "会把你拖进去看好几个钟头。" },
+        { "en": "You never discover something totally new.", "zh": "永远碰不到全新的东西。" }
+      ]
+    },
+    {
+      "id": "ai-learn",
+      "category": "ai",
+      "title_en": "Should every kid learn how AI works at school?",
+      "title_zh": "每个小孩都应该在学校学 AI 是怎么运作的吗？",
+      "pro": [
+        { "en": "AI is everywhere now, so we should understand it.", "zh": "AI 到处都是，应该懂它。" },
+        { "en": "Knowing how it works means it can't fool you.", "zh": "懂原理，就不会被它骗。" },
+        { "en": "It could be a big part of your future job.", "zh": "可能是你将来工作的一大部分。" }
+      ],
+      "con": [
+        { "en": "Young kids should master reading and math first.", "zh": "小孩应先学好读写和数学。" },
+        { "en": "AI changes so fast that lessons get old quickly.", "zh": "AI 变太快，学的很快就过时。" },
+        { "en": "You can use AI well without knowing how it works.", "zh": "会用 AI 不一定要懂原理。" }
+      ]
+    },
     {
       "id": "exams",
       "category": "school",
@@ -225,7 +386,7 @@
     },
     {
       "id": "robot-chores",
-      "category": "tech",
+      "category": "ai",
       "title_en": "Should robots do our chores?",
       "title_zh": "机器人应该帮我们做家务吗？",
       "pro": [
@@ -289,7 +450,7 @@
     },
     {
       "id": "ai-choose-books",
-      "category": "tech",
+      "category": "ai",
       "title_en": "Should AI choose what books we read?",
       "title_zh": "应该让 AI 帮我们选书读吗？",
       "pro": [

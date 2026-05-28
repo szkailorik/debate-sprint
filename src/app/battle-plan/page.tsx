@@ -66,8 +66,8 @@ const STEPS: Step[] = [
     why_zh: "三点结构（First / Second / Finally）是辩论的骨架。",
     cta: {
       href: "/predictions",
-      label_en: "→ Browse Top 50 predicted motions for ideas",
-      label_zh: "→ 翻押题 50 找灵感（50 个预测辩题）",
+      label_en: "→ Browse Top 60 predicted motions for ideas",
+      label_zh: "→ 翻押题 60 找灵感（60 个预测辩题，AI 类最多）",
     },
   },
   {
