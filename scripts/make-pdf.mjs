@@ -193,7 +193,9 @@ const html = `<!doctype html>
 <meta charset="utf-8"/>
 <title>DebateSprint 押题手册</title>
 <style>
-  @page { size: A4; margin: 14mm 12mm 16mm 12mm; }
+  /* Page sized to the iPad screen ratio (3:4) so each page fills the
+     screen edge-to-edge in Books/Files — no wide black bars, big text. */
+  @page { size: 7.5in 10in; margin: 11mm 11mm 12mm 11mm; }
   * { box-sizing: border-box; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body {
@@ -201,8 +203,8 @@ const html = `<!doctype html>
     color: #2b1810;
     background: #fdfaf2;
     margin: 0;
-    font-size: 11.5px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.6;
   }
   h1,h2,h3 { font-family: Georgia, "Songti SC", serif; }
   .break-before { break-before: page; }
@@ -210,58 +212,58 @@ const html = `<!doctype html>
 
   /* Cover */
   .cover {
-    height: 250mm; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    height: 214mm; display:flex; flex-direction:column; align-items:center; justify-content:center;
     text-align:center; break-after: page;
   }
-  .crest { font-size: 48px; color:#b8862f; }
-  .cover-title { font-size: 46px; margin: 6px 0 0; letter-spacing: 4px; color:#2b1810; }
-  .cover-sub { font-size: 22px; color:#b8862f; margin: 4px 0 0; }
-  .cover-line { font-size: 14px; color:#5a3e2b; margin-top: 4px; }
-  .cover-rule { width: 60%; height:2px; background: linear-gradient(to right,transparent,#b8862f,transparent); margin: 22px 0; }
-  .cover-meta { font-size: 14px; color:#2b1810; line-height:1.8; }
-  .cover-foot { font-size: 12px; color:#5a3e2b; margin-top: 28px; }
+  .crest { font-size: 56px; color:#b8862f; }
+  .cover-title { font-size: 58px; margin: 8px 0 0; letter-spacing: 5px; color:#2b1810; }
+  .cover-sub { font-size: 28px; color:#b8862f; margin: 6px 0 0; }
+  .cover-line { font-size: 18px; color:#5a3e2b; margin-top: 6px; }
+  .cover-rule { width: 64%; height:2px; background: linear-gradient(to right,transparent,#b8862f,transparent); margin: 28px 0; }
+  .cover-meta { font-size: 18px; color:#2b1810; line-height:2; }
+  .cover-foot { font-size: 15px; color:#5a3e2b; margin-top: 34px; }
 
   /* Section headers */
-  .sec-title { font-size: 24px; color:#2b1810; border-bottom: 2px solid #b8862f; padding-bottom: 6px; margin: 0 0 4px; }
-  .sec-note { font-size: 12px; color:#5a3e2b; margin: 0 0 14px; }
+  .sec-title { font-size: 30px; color:#2b1810; border-bottom: 2.5px solid #b8862f; padding-bottom: 8px; margin: 0 0 6px; }
+  .sec-note { font-size: 15px; color:#5a3e2b; margin: 0 0 18px; }
 
   /* Full-page band (divider pages) */
-  .band { height: 240mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
-  .band-title { font-size: 40px; color:#b8862f; margin:0; }
-  .band-sub { font-size: 18px; color:#2b1810; margin: 6px 0 0; }
-  .band-note { font-size: 12px; color:#5a3e2b; max-width: 130mm; margin: 16px auto 0; line-height:1.7; }
+  .band { height: 214mm; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .band-title { font-size: 52px; color:#b8862f; margin:0; }
+  .band-sub { font-size: 24px; color:#2b1810; margin: 8px 0 0; }
+  .band-note { font-size: 16px; color:#5a3e2b; max-width: 150mm; margin: 20px auto 0; line-height:1.9; }
 
   /* Cheat cards */
-  .card { border:1px solid #e0c98a; border-radius:8px; padding:12px 14px; margin-bottom:12px; background:#fffdf7; }
-  .card-h { font-size: 15px; margin:0 0 6px; color:#2b1810; }
-  .mini { font-size: 10px; color:#7a5a3a; }
+  .card { border:1.5px solid #e0c98a; border-radius:10px; padding:16px 18px; margin-bottom:16px; background:#fffdf7; }
+  .card-h { font-size: 20px; margin:0 0 10px; color:#2b1810; }
+  .mini { font-size: 13px; color:#7a5a3a; }
   table.kv { width:100%; border-collapse:collapse; }
-  table.kv .k { font-weight:bold; color:#b8862f; width:24px; font-size:15px; font-family:Georgia,serif; vertical-align:top; }
-  table.kv td { padding:3px 4px; border-bottom:1px dotted #e8d9b5; }
-  ol.phrases { margin:0; padding-left:18px; }
-  ol.phrases li { margin-bottom:6px; }
-  .ph-en { display:block; }
-  .ph-zh { display:block; font-size:10px; color:#7a5a3a; }
+  table.kv .k { font-weight:bold; color:#b8862f; width:30px; font-size:20px; font-family:Georgia,serif; vertical-align:top; }
+  table.kv td { padding:6px 6px; border-bottom:1px dotted #e8d9b5; font-size:15px; }
+  ol.phrases { margin:0; padding-left:22px; }
+  ol.phrases li { margin-bottom:10px; }
+  .ph-en { display:block; font-size:15.5px; }
+  .ph-zh { display:block; font-size:13px; color:#7a5a3a; margin-top:1px; }
   table.patterns { width:100%; border-collapse:collapse; }
-  table.patterns th { text-align:left; font-size:10px; color:#b8862f; text-transform:uppercase; border-bottom:1px solid #e0c98a; padding:4px; }
-  table.patterns td { padding:5px 4px; border-bottom:1px solid #f0e6cc; vertical-align:top; width:50%; }
+  table.patterns th { text-align:left; font-size:12px; color:#b8862f; text-transform:uppercase; border-bottom:1.5px solid #e0c98a; padding:6px; }
+  table.patterns td { padding:8px 6px; border-bottom:1px solid #f0e6cc; vertical-align:top; width:50%; font-size:14.5px; }
 
   /* Topic card */
-  .topic { border:1px solid #e0c98a; border-radius:8px; padding:10px 12px; margin-bottom:10px; background:#fffdf7; }
-  .topic-title { font-weight:bold; font-size:13.5px; color:#2b1810; margin-bottom:6px; }
-  .topic-zh { font-weight:normal; color:#5a3e2b; font-size:12px; }
-  .cols { display:flex; gap:12px; }
+  .topic { border:1.5px solid #e0c98a; border-radius:10px; padding:14px 16px; margin-bottom:14px; background:#fffdf7; }
+  .topic-title { font-weight:bold; font-size:18px; color:#2b1810; margin-bottom:10px; line-height:1.4; }
+  .topic-zh { font-weight:normal; color:#5a3e2b; font-size:15.5px; }
+  .cols { display:flex; gap:18px; }
   .col { flex:1; }
-  .col-h { font-family:Georgia,serif; font-size:11px; letter-spacing:1px; margin-bottom:3px; }
+  .col-h { font-family:Georgia,serif; font-size:14px; letter-spacing:1px; margin-bottom:6px; font-weight:bold; }
   .pro .col-h { color:#2d5016; }
   .con .col-h { color:#c0392b; }
-  .col ol { margin:0; padding-left:16px; }
-  .col li { margin-bottom:4px; }
-  .col .en { display:block; }
-  .col .zh { display:block; font-size:9.5px; color:#7a5a3a; }
-  .arg { margin-bottom:6px; }
-  .arg .en { font-size:11px; }
-  .arg .eg { font-size:9.5px; color:#6a4a2a; padding-left:6px; border-left:2px solid #e0c98a; margin-top:2px; }
+  .col ol { margin:0; padding-left:20px; }
+  .col li { margin-bottom:8px; }
+  .col .en { display:block; font-size:14.5px; }
+  .col .zh { display:block; font-size:12.5px; color:#7a5a3a; margin-top:1px; }
+  .arg { margin-bottom:10px; }
+  .arg .en { font-size:14px; }
+  .arg .eg { font-size:12.5px; color:#6a4a2a; padding-left:8px; border-left:2.5px solid #e0c98a; margin-top:3px; line-height:1.5; }
 </style>
 </head>
 <body>
